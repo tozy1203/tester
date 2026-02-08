@@ -3,18 +3,7 @@
 # List of source URLs to fetch proxy configurations from.
 # Add or remove URLs as needed. All URLs in this list are automatically enabled.
 SOURCE_URLS = [
-    "https://t.me/s/v2rayfree",
-    "https://t.me/s/PrivateVPNs",
-    "https://t.me/s/prrofile_purple",
-    "https://t.me/s/DirectVPN",
-    "https://t.me/s/persianvpnhub",
-    "https://raw.githubusercontent.com/MahsaNetConfigTopic/config/refs/heads/main/xray_final.txt",
-    "https://raw.githubusercontent.com/Mahdi0024/ProxyCollector/master/sub/proxies.txt",
-    "https://raw.githubusercontent.com/arshiacomplus/v2rayExtractor/refs/heads/main/mix/sub.html",
-    "https://raw.githubusercontent.com/parvinxs/Submahsanetxsparvin/refs/heads/main/Sub.mahsa.xsparvin",
-    "https://raw.githubusercontent.com/Freedom-Guard-Builder/FL/refs/heads/main/config/Fast.txt",
-    "https://raw.githubusercontent.com/Ashkan-m/v2ray/main/Sub.txt",
-    "https://raw.githubusercontent.com/davudsedft/purvpn/refs/heads/main/links/purkow.txt",
+    "https://raw.githubusercontent.com/Epodonios/v2ray-configs/refs/heads/main/All_Configs_Sub.txt",
 ]
 
 # Set to True to fetch the maximum possible number of configurations.
@@ -54,7 +43,7 @@ SINGBOX_TESTER_MAX_WORKERS = 8
 
 # Maximum time (in seconds) to wait for a sing-box config to respond during testing.
 # Configs that take longer than this will be marked as failed.
-SINGBOX_TESTER_TIMEOUT_SECONDS = 10
+SINGBOX_TESTER_TIMEOUT_SECONDS = 5
 
 # List of URLs to test sing-box configs against.
 # The tester will try each URL in order until one succeeds.
@@ -68,7 +57,7 @@ SINGBOX_TESTER_URLS = [
 # Set to True to enable testing of configs using Xray core.
 # If True, Xray will be used to test all fetched configs before conversion and create a 'tested' config file.
 # If False, the testing step will be skipped.
-ENABLE_XRAY_TESTER = True
+ENABLE_XRAY_TESTER = False
 
 # Number of parallel workers to use for testing Xray configs.
 # A higher number means faster testing but uses more CPU/RAM.
