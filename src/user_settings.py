@@ -43,7 +43,7 @@ SINGBOX_TESTER_MAX_WORKERS = 8
 
 # Maximum time (in seconds) to wait for a sing-box config to respond during testing.
 # Configs that take longer than this will be marked as failed.
-SINGBOX_TESTER_TIMEOUT_SECONDS = 5
+SINGBOX_TESTER_TIMEOUT_SECONDS = 3
 
 # List of URLs to test sing-box configs against.
 # The tester will try each URL in order until one succeeds.
