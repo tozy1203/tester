@@ -316,7 +316,7 @@ class ConfigRenamer:
                 flag, country_code = self.get_location(data['add'])
                 protocol_info = self.build_protocol_info(protocol_type, data)
                 protocol_str = '/'.join(protocol_info)
-                new_name = f"{flag}{country_code}-{index}-{data['address']}-{data['port']}"
+                new_name = f"{flag}{country_code}-{index}-{data['add']}-{data['port']}"
                 data['ps'] = new_name
                 encoded = base64.b64encode(json.dumps(data, ensure_ascii=False).encode('utf-8')).decode('utf-8')
                 return f"vmess://{encoded}"
