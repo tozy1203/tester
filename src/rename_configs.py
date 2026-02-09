@@ -316,7 +316,7 @@ class ConfigRenamer:
                 flag, country_code = self.get_location(data['add'])
                 protocol_info = self.build_protocol_info(protocol_type, data)
                 protocol_str = '/'.join(protocol_info)
-                new_name = f"{flag} {index} - {country_code} - {protocol_str} - {data['port']}"
+                new_name = f"{flag}{country_code}-{index}-{data['address']}-{data['port']}"
                 data['ps'] = new_name
                 encoded = base64.b64encode(json.dumps(data, ensure_ascii=False).encode('utf-8')).decode('utf-8')
                 return f"vmess://{encoded}"
@@ -329,7 +329,7 @@ class ConfigRenamer:
                 flag, country_code = self.get_location(data['address'])
                 protocol_info = self.build_protocol_info(protocol_type, data)
                 protocol_str = '/'.join(protocol_info)
-                new_name = f"{flag} {index} - {country_code} - {protocol_str} - {data['port']}"
+                new_name = f"{flag}{country_code}-{index}-{data['address']}-{data['port']}"
                 url = urlparse(config)
                 params = parse_qs(url.query)
                 query_parts = []
@@ -348,7 +348,7 @@ class ConfigRenamer:
                 flag, country_code = self.get_location(data['address'])
                 protocol_info = self.build_protocol_info(protocol_type, data)
                 protocol_str = '/'.join(protocol_info)
-                new_name = f"{flag} {index} - {country_code} - {protocol_str} - {data['port']}"
+                new_name = f"{flag}{country_code}-{index}-{data['address']}-{data['port']}"
                 url = urlparse(config)
                 params = parse_qs(url.query)
                 query_parts = []
@@ -367,7 +367,7 @@ class ConfigRenamer:
                 flag, country_code = self.get_location(data['address'])
                 protocol_info = self.build_protocol_info(protocol_type, data)
                 protocol_str = '/'.join(protocol_info)
-                new_name = f"{flag} {index} - {country_code} - {protocol_str} - {data['port']}"
+                new_name = f"{flag}{country_code}-{index}-{data['address']}-{data['port']}"
                 url = urlparse(config)
                 query_string = url.query
                 protocol = 'hysteria2' if config_lower.startswith('hysteria2://') else 'hy2'
@@ -382,7 +382,7 @@ class ConfigRenamer:
                 flag, country_code = self.get_location(data['address'])
                 protocol_info = self.build_protocol_info(protocol_type, data)
                 protocol_str = '/'.join(protocol_info)
-                new_name = f"{flag} {index} - {country_code} - {protocol_str} - {data['port']}"
+                new_name = f"{flag}{country_code}-{index}-{data['address']}-{data['port']}"
                 method_pass = f"{data['method']}:{data['password']}"
                 encoded = base64.b64encode(method_pass.encode('utf-8')).decode('utf-8').replace('+', '-').replace('/', '_').rstrip('=')
                 new_config = f"ss://{encoded}@{data['address']}:{data['port']}#{new_name}"
