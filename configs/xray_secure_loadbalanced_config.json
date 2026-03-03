@@ -60,34 +60,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "squad-2-de.vps-m.ru",
-            "port": 443,
-            "users": [
-              {
-                "id": "0509acee-63e3-4364-95cc-21c601f059be",
-                "flow": "xtls-rprx-vision",
-                "encryption": "none",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "booking.com",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "proxy-2",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "47.253.226.114",
             "port": 443,
             "users": [
@@ -112,7 +84,65 @@
       }
     },
     {
+      "tag": "proxy-2",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "sg.connect-opengate.cv",
+            "port": 8443,
+            "users": [
+              {
+                "id": "05f0c31f-d127-4a4e-a43c-b040ba8e42d0",
+                "flow": "xtls-rprx-vision",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "hello.opengate.tech",
+          "allowInsecure": false,
+          "fingerprint": "qq"
+        }
+      }
+    },
+    {
       "tag": "proxy-3",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "83.222.20.64",
+            "port": 17910,
+            "users": [
+              {
+                "id": "079c1b04-7ef9-4c49-8a7a-849a18ba7b9b",
+                "flow": "",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "yahoo.com",
+          "allowInsecure": false,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "proxy-4",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -141,41 +171,12 @@
       }
     },
     {
-      "tag": "proxy-4",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "178.17.59.73",
-            "port": 2053,
-            "users": [
-              {
-                "id": "07cd9dbe-21ac-4871-817d-c772687e4b7c",
-                "flow": "xtls-rprx-vision",
-                "encryption": "none",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "www.ibm.com",
-          "allowInsecure": false,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
       "tag": "proxy-5",
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "37.16.74.19",
+            "address": "178.17.59.73",
             "port": 2053,
             "users": [
               {
@@ -233,7 +234,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "89.106.89.112",
+            "address": "37.16.74.19",
             "port": 2053,
             "users": [
               {
@@ -555,11 +556,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "38.244.137.198",
+            "address": "poe.com",
             "port": 443,
             "users": [
               {
-                "id": "09748875-9da3-440e-9809-9752e1dda1e4",
+                "id": "081efe27-f6b8-4f60-aedb-3c9effe9c67d",
                 "flow": "",
                 "encryption": "none",
                 "level": 8
@@ -569,12 +570,20 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
+        "network": "ws",
         "security": "tls",
+        "wsSettings": {
+          "path": "/",
+          "headers": {
+            "Host": "80bab3a2.gon-7ye.pages.dev"
+          }
+        },
         "tlsSettings": {
-          "serverName": "google.com",
+          "serverName": "80bab3a2.gon-7ye.pages.dev",
           "allowInsecure": false,
-          "fingerprint": "chrome"
+          "alpn": [
+            "http/1.1"
+          ]
         }
       }
     },
@@ -613,11 +622,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "157.173.127.225",
+            "address": "38.244.137.198",
             "port": 443,
             "users": [
               {
-                "id": "11beaf11-726d-4c11-8ce9-27308c1c608c",
+                "id": "09748875-9da3-440e-9809-9752e1dda1e4",
                 "flow": "",
                 "encryption": "none",
                 "level": 8
@@ -630,7 +639,7 @@
         "network": "tcp",
         "security": "tls",
         "tlsSettings": {
-          "serverName": "analytics.google.com",
+          "serverName": "google.com",
           "allowInsecure": false,
           "fingerprint": "chrome"
         }
@@ -661,7 +670,7 @@
         "tlsSettings": {
           "serverName": "analytics.google.com",
           "allowInsecure": false,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         }
       }
     },
@@ -700,11 +709,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "108.165.174.192",
-            "port": 2040,
+            "address": "157.173.127.225",
+            "port": 443,
             "users": [
               {
-                "id": "14818654-7689-453a-9a1f-4c72f89782d5",
+                "id": "11beaf11-726d-4c11-8ce9-27308c1c608c",
                 "flow": "",
                 "encryption": "none",
                 "level": 8
@@ -717,9 +726,9 @@
         "network": "tcp",
         "security": "tls",
         "tlsSettings": {
-          "serverName": "tradingview.com",
+          "serverName": "analytics.google.com",
           "allowInsecure": false,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         }
       }
     },
@@ -729,12 +738,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "94.131.104.225",
-            "port": 2040,
+            "address": "nr-01.opsvpnvless.ru",
+            "port": 443,
             "users": [
               {
-                "id": "14818654-7689-453a-9a1f-4c72f89782d5",
-                "flow": "",
+                "id": "1218c022-dca8-49e5-b7d4-a04f3023db81",
+                "flow": "xtls-rprx-vision",
                 "encryption": "none",
                 "level": 8
               }
@@ -746,7 +755,7 @@
         "network": "tcp",
         "security": "tls",
         "tlsSettings": {
-          "serverName": "tradingview.com",
+          "serverName": "stats.vk-portal.net",
           "allowInsecure": false,
           "fingerprint": "chrome"
         }
@@ -758,7 +767,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "94.131.104.229",
+            "address": "108.165.174.192",
             "port": 2040,
             "users": [
               {
@@ -787,7 +796,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "94.131.104.229",
+            "address": "94.131.104.225",
             "port": 2040,
             "users": [
               {
@@ -816,7 +825,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "germ-node.genadata.online",
+            "address": "94.131.104.229",
             "port": 2040,
             "users": [
               {
@@ -845,7 +854,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "riga-node.genadata.online",
+            "address": "94.131.104.229",
             "port": 2040,
             "users": [
               {
@@ -874,7 +883,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "riga-node.genadata.online",
+            "address": "germ-node.genadata.online",
             "port": 2040,
             "users": [
               {
@@ -922,7 +931,7 @@
         "tlsSettings": {
           "serverName": "tradingview.com",
           "allowInsecure": false,
-          "fingerprint": "qq"
+          "fingerprint": "chrome"
         }
       }
     },
@@ -961,6 +970,64 @@
       "settings": {
         "vnext": [
           {
+            "address": "riga-node.genadata.online",
+            "port": 2040,
+            "users": [
+              {
+                "id": "14818654-7689-453a-9a1f-4c72f89782d5",
+                "flow": "",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "tradingview.com",
+          "allowInsecure": false,
+          "fingerprint": "qq"
+        }
+      }
+    },
+    {
+      "tag": "proxy-32",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "riga-node.genadata.online",
+            "port": 2040,
+            "users": [
+              {
+                "id": "14818654-7689-453a-9a1f-4c72f89782d5",
+                "flow": "",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "tradingview.com",
+          "allowInsecure": false,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "proxy-33",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "159.89.87.21",
             "port": 28190,
             "users": [
@@ -985,7 +1052,7 @@
       }
     },
     {
-      "tag": "proxy-32",
+      "tag": "proxy-34",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -1010,66 +1077,6 @@
           "serverName": "max.ru",
           "allowInsecure": false,
           "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "tag": "proxy-33",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "47.251.25.74",
-            "port": 443,
-            "users": [
-              {
-                "id": "18805ff3-b420-45de-af18-93be14024ae8",
-                "flow": "xtls-rprx-vision",
-                "encryption": "none",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "www.amazon.com",
-          "allowInsecure": false,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "tag": "proxy-34",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "u8.ok8.ccwu.cc",
-            "port": 443,
-            "password": "1338f666-2fcc-4538-bc29-1ebf89624383",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "wsSettings": {
-          "path": "/XCLcnSashhgSVE3HOw1VI85y",
-          "headers": {
-            "Host": "u8.ok8.ccwu.cc"
-          }
-        },
-        "tlsSettings": {
-          "serverName": "u8.ok8.ccwu.cc",
-          "allowInsecure": false,
-          "alpn": [
-            "http/1.1"
-          ]
         }
       }
     },
@@ -1136,8 +1143,8 @@
       "settings": {
         "servers": [
           {
-            "address": "153.121.65.107",
-            "port": 3419,
+            "address": "160.16.106.99",
+            "port": 4920,
             "password": "262f1d150049457ac1d6e66b020fa980",
             "level": 8
           }
@@ -1188,7 +1195,7 @@
       "settings": {
         "servers": [
           {
-            "address": "160.16.106.99",
+            "address": "160.16.124.17",
             "port": 4920,
             "password": "262f1d150049457ac1d6e66b020fa980",
             "level": 8
@@ -1214,7 +1221,7 @@
       "settings": {
         "servers": [
           {
-            "address": "160.16.106.99",
+            "address": "160.16.130.21",
             "port": 4920,
             "password": "262f1d150049457ac1d6e66b020fa980",
             "level": 8
@@ -1240,8 +1247,8 @@
       "settings": {
         "servers": [
           {
-            "address": "160.16.106.99",
-            "port": 4920,
+            "address": "160.16.72.205",
+            "port": 2001,
             "password": "262f1d150049457ac1d6e66b020fa980",
             "level": 8
           }
@@ -1266,8 +1273,8 @@
       "settings": {
         "servers": [
           {
-            "address": "160.16.106.99",
-            "port": 4920,
+            "address": "160.16.72.205",
+            "port": 2001,
             "password": "262f1d150049457ac1d6e66b020fa980",
             "level": 8
           }
@@ -1288,58 +1295,6 @@
     },
     {
       "tag": "proxy-43",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "160.16.124.17",
-            "port": 4920,
-            "password": "262f1d150049457ac1d6e66b020fa980",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "www.nintendogames.net",
-          "allowInsecure": false,
-          "alpn": [
-            "h2",
-            "http/1.1"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "proxy-44",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "160.16.130.21",
-            "port": 4920,
-            "password": "262f1d150049457ac1d6e66b020fa980",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "www.nintendogames.net",
-          "allowInsecure": false,
-          "alpn": [
-            "h2",
-            "http/1.1"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "proxy-45",
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1365,14 +1320,14 @@
       }
     },
     {
-      "tag": "proxy-46",
+      "tag": "proxy-44",
       "protocol": "trojan",
       "settings": {
         "servers": [
           {
-            "address": "jko0.dddc.de5.net",
+            "address": "ggbnhj.932.pp.ua",
             "port": 443,
-            "password": "34778794-72e8-4862-b1e7-6e6c3ba894be",
+            "password": "2bfe58f7-da1d-45df-ab43-7c665b20ee29",
             "level": 8
           }
         ]
@@ -1381,13 +1336,75 @@
         "network": "ws",
         "security": "tls",
         "wsSettings": {
-          "path": "/FYzt5jjXXYWmzP5D1vsO",
+          "path": "/2cO5FH0xUmT9oqnbBhmKb8nOkg",
           "headers": {
-            "Host": "jko0.dddc.de5.net"
+            "Host": "ggbnhj.932.pp.ua"
           }
         },
         "tlsSettings": {
-          "serverName": "jko0.dddc.de5.net",
+          "serverName": "ggbnhj.932.pp.ua",
+          "allowInsecure": false,
+          "alpn": [
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "proxy-45",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "ggbnhj.932.pp.ua",
+            "port": 443,
+            "password": "2bfe58f7-da1d-45df-ab43-7c665b20ee29",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "wsSettings": {
+          "path": "/2cO5FH0xUmT9oqnbBhmKb8nOkg",
+          "headers": {
+            "Host": "ggbnhj.932.pp.ua"
+          }
+        },
+        "tlsSettings": {
+          "serverName": "ggbnhj.932.pp.ua",
+          "allowInsecure": false,
+          "alpn": [
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "proxy-46",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "vvvbnj.taipei102.indevs.in",
+            "port": 443,
+            "password": "2bfe58f7-da1d-45df-ab43-7c665b20ee29",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "wsSettings": {
+          "path": "/2cO5FH0xUmT9oqnbBhmKb8nOkg",
+          "headers": {
+            "Host": "vvvbnj.taipei102.indevs.in"
+          }
+        },
+        "tlsSettings": {
+          "serverName": "vvvbnj.taipei102.indevs.in",
           "allowInsecure": false,
           "alpn": [
             "http/1.1"
@@ -1401,6 +1418,37 @@
       "settings": {
         "servers": [
           {
+            "address": "vvvbnj.taipei102.indevs.in",
+            "port": 443,
+            "password": "2bfe58f7-da1d-45df-ab43-7c665b20ee29",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "wsSettings": {
+          "path": "/2cO5FH0xUmT9oqnbBhmKb8nOkg",
+          "headers": {
+            "Host": "vvvbnj.taipei102.indevs.in"
+          }
+        },
+        "tlsSettings": {
+          "serverName": "vvvbnj.taipei102.indevs.in",
+          "allowInsecure": false,
+          "alpn": [
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "proxy-48",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
             "address": "jko0.dddc.de5.net",
             "port": 443,
             "password": "34778794-72e8-4862-b1e7-6e6c3ba894be",
@@ -1427,317 +1475,7 @@
       }
     },
     {
-      "tag": "proxy-48",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "bnhju.dddct.us.ci",
-            "port": 443,
-            "password": "4ed4ac41-4b56-42c4-b31c-4d7bc36f74ce",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "wsSettings": {
-          "path": "/4e633j8uZI4BWzwNzcYz",
-          "headers": {
-            "Host": "bnhju.dddct.us.ci"
-          }
-        },
-        "tlsSettings": {
-          "serverName": "bnhju.dddct.us.ci",
-          "allowInsecure": false,
-          "alpn": [
-            "http/1.1"
-          ]
-        }
-      }
-    },
-    {
       "tag": "proxy-49",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "bnhy7.986986.shop",
-            "port": 443,
-            "password": "4ed4ac41-4b56-42c4-b31c-4d7bc36f74ce",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "wsSettings": {
-          "path": "/4e633j8uZI4BWzwNzcYz",
-          "headers": {
-            "Host": "bnhy7.986986.shop"
-          }
-        },
-        "tlsSettings": {
-          "serverName": "bnhy7.986986.shop",
-          "allowInsecure": false,
-          "alpn": [
-            "http/1.1"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "proxy-50",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "hnm.huangdi2025.dpdns.org",
-            "port": 443,
-            "password": "4ed4ac41-4b56-42c4-b31c-4d7bc36f74ce",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "wsSettings": {
-          "path": "/4e633j8uZI4BWzwNzcYz",
-          "headers": {
-            "Host": "hnm.huangdi2025.dpdns.org"
-          }
-        },
-        "tlsSettings": {
-          "serverName": "hnm.huangdi2025.dpdns.org",
-          "allowInsecure": false,
-          "alpn": [
-            "http/1.1"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "proxy-51",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "ghj.husngahng.click",
-            "port": 443,
-            "password": "721d3fd0-e9f1-40c3-92cd-d4405a4319d6",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "wsSettings": {
-          "path": "/ElrtQ8CAz6RgfMaiN9LMya",
-          "headers": {
-            "Host": "ghj.husngahng.click"
-          }
-        },
-        "tlsSettings": {
-          "serverName": "ghj.husngahng.click",
-          "allowInsecure": false,
-          "alpn": [
-            "http/1.1"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "proxy-52",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "kklio.dddc.us.ci",
-            "port": 443,
-            "password": "721d3fd0-e9f1-40c3-92cd-d4405a4319d6",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "wsSettings": {
-          "path": "/ElrtQ8CAz6RgfMaiN9LMya",
-          "headers": {
-            "Host": "kklio.dddc.us.ci"
-          }
-        },
-        "tlsSettings": {
-          "serverName": "kklio.dddc.us.ci",
-          "allowInsecure": false,
-          "alpn": [
-            "http/1.1"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "proxy-53",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "tgh.iran2029.indevs.in",
-            "port": 443,
-            "password": "721d3fd0-e9f1-40c3-92cd-d4405a4319d6",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "wsSettings": {
-          "path": "/ElrtQ8CAz6RgfMaiN9LMya",
-          "headers": {
-            "Host": "tgh.iran2029.indevs.in"
-          }
-        },
-        "tlsSettings": {
-          "serverName": "tgh.iran2029.indevs.in",
-          "allowInsecure": false,
-          "alpn": [
-            "http/1.1"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "proxy-54",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "yhj.huangshang2026.indevs.in",
-            "port": 443,
-            "password": "721d3fd0-e9f1-40c3-92cd-d4405a4319d6",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "wsSettings": {
-          "path": "/ElrtQ8CAz6RgfMaiN9LMya",
-          "headers": {
-            "Host": "yhj.huangshang2026.indevs.in"
-          }
-        },
-        "tlsSettings": {
-          "serverName": "yhj.huangshang2026.indevs.in",
-          "allowInsecure": false,
-          "alpn": [
-            "http/1.1"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "proxy-55",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "yhj.iran2026.indevs.in",
-            "port": 443,
-            "password": "721d3fd0-e9f1-40c3-92cd-d4405a4319d6",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "wsSettings": {
-          "path": "/ElrtQ8CAz6RgfMaiN9LMya",
-          "headers": {
-            "Host": "yhj.iran2026.indevs.in"
-          }
-        },
-        "tlsSettings": {
-          "serverName": "yhj.iran2026.indevs.in",
-          "allowInsecure": false,
-          "alpn": [
-            "http/1.1"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "proxy-56",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "dcvgt6.0z0.ccwu.cc",
-            "port": 443,
-            "password": "8ea1b89f-21d5-49b9-9bcd-1ad9ac39b4ba",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "wsSettings": {
-          "path": "/QXP9D5w7xb1TX3RJBAQ5Ah",
-          "headers": {
-            "Host": "dcvgt6.0z0.ccwu.cc"
-          }
-        },
-        "tlsSettings": {
-          "serverName": "dcvgt6.0z0.ccwu.cc",
-          "allowInsecure": false,
-          "alpn": [
-            "http/1.1"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "proxy-57",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "ddffghy.0wu.ccwu.cc",
-            "port": 443,
-            "password": "8ea1b89f-21d5-49b9-9bcd-1ad9ac39b4ba",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "wsSettings": {
-          "path": "/QXP9D5w7xb1TX3RJBAQ5Ah",
-          "headers": {
-            "Host": "ddffghy.0wu.ccwu.cc"
-          }
-        },
-        "tlsSettings": {
-          "serverName": "ddffghy.0wu.ccwu.cc",
-          "allowInsecure": false,
-          "alpn": [
-            "http/1.1"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "proxy-58",
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1763,64 +1501,7 @@
       }
     },
     {
-      "tag": "proxy-59",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "bgty6.852224.xyz",
-            "port": 443,
-            "password": "c52d2de2-fc6d-490c-8421-132f87615736",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "wsSettings": {
-          "path": "/PDbJ6Qn4xImwtg6PusRbe",
-          "headers": {
-            "Host": "bgty6.852224.xyz"
-          }
-        },
-        "tlsSettings": {
-          "serverName": "bgty6.852224.xyz",
-          "allowInsecure": false,
-          "alpn": [
-            "http/1.1"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "proxy-60",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "220.130.58.136",
-            "port": 35502,
-            "password": "c5355528-55a2-45df-b8fd-a48ce3c41413",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "green2.cdntencentmusic.com",
-          "allowInsecure": false,
-          "alpn": [
-            "h2",
-            "http/1.1"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "proxy-61",
+      "tag": "proxy-50",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -1838,7 +1519,7 @@
       }
     },
     {
-      "tag": "proxy-62",
+      "tag": "proxy-51",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -1856,7 +1537,25 @@
       }
     },
     {
-      "tag": "proxy-63",
+      "tag": "proxy-52",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "51.75.168.50",
+            "port": 13030,
+            "method": "chacha20-ietf-poly1305",
+            "password": "6c815bb84c781da5",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "proxy-53",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -1874,7 +1573,7 @@
       }
     },
     {
-      "tag": "proxy-64",
+      "tag": "proxy-54",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -1892,7 +1591,7 @@
       }
     },
     {
-      "tag": "proxy-65",
+      "tag": "proxy-55",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -1910,7 +1609,7 @@
       }
     },
     {
-      "tag": "proxy-66",
+      "tag": "proxy-56",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -1928,7 +1627,7 @@
       }
     },
     {
-      "tag": "proxy-67",
+      "tag": "proxy-57",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -1946,7 +1645,7 @@
       }
     },
     {
-      "tag": "proxy-68",
+      "tag": "proxy-58",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -1964,7 +1663,7 @@
       }
     },
     {
-      "tag": "proxy-69",
+      "tag": "proxy-59",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -1982,7 +1681,7 @@
       }
     },
     {
-      "tag": "proxy-70",
+      "tag": "proxy-60",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -2000,7 +1699,25 @@
       }
     },
     {
-      "tag": "proxy-71",
+      "tag": "proxy-61",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "163.171.181.49",
+            "port": 42936,
+            "method": "chacha20-ietf-poly1305",
+            "password": "877c3b069c335ffc",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "proxy-62",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -2018,7 +1735,7 @@
       }
     },
     {
-      "tag": "proxy-72",
+      "tag": "proxy-63",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -2036,7 +1753,7 @@
       }
     },
     {
-      "tag": "proxy-73",
+      "tag": "proxy-64",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -2054,25 +1771,7 @@
       }
     },
     {
-      "tag": "proxy-74",
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "switcher-nick-croquet.freesocks.work",
-            "port": 443,
-            "method": "chacha20-ietf-poly1305",
-            "password": "9tqhMdIrTkgQ46PvhyAtMH",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "proxy-75",
+      "tag": "proxy-65",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -2090,7 +1789,7 @@
       }
     },
     {
-      "tag": "proxy-76",
+      "tag": "proxy-66",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -2108,7 +1807,7 @@
       }
     },
     {
-      "tag": "proxy-77",
+      "tag": "proxy-67",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -2126,7 +1825,7 @@
       }
     },
     {
-      "tag": "proxy-78",
+      "tag": "proxy-68",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -2144,7 +1843,7 @@
       }
     },
     {
-      "tag": "proxy-79",
+      "tag": "proxy-69",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -2162,7 +1861,7 @@
       }
     },
     {
-      "tag": "proxy-80",
+      "tag": "proxy-70",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -2180,7 +1879,7 @@
       }
     },
     {
-      "tag": "proxy-81",
+      "tag": "proxy-71",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -2198,7 +1897,7 @@
       }
     },
     {
-      "tag": "proxy-82",
+      "tag": "proxy-72",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -2216,7 +1915,7 @@
       }
     },
     {
-      "tag": "proxy-83",
+      "tag": "proxy-73",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -2234,7 +1933,7 @@
       }
     },
     {
-      "tag": "proxy-84",
+      "tag": "proxy-74",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -2252,7 +1951,7 @@
       }
     },
     {
-      "tag": "proxy-85",
+      "tag": "proxy-75",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -2270,7 +1969,7 @@
       }
     },
     {
-      "tag": "proxy-86",
+      "tag": "proxy-76",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -2288,7 +1987,7 @@
       }
     },
     {
-      "tag": "proxy-87",
+      "tag": "proxy-77",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -2306,7 +2005,7 @@
       }
     },
     {
-      "tag": "proxy-88",
+      "tag": "proxy-78",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -2324,7 +2023,7 @@
       }
     },
     {
-      "tag": "proxy-89",
+      "tag": "proxy-79",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -2342,7 +2041,7 @@
       }
     },
     {
-      "tag": "proxy-90",
+      "tag": "proxy-80",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -2360,7 +2059,25 @@
       }
     },
     {
-      "tag": "proxy-91",
+      "tag": "proxy-81",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "103.97.203.227",
+            "port": 990,
+            "method": "chacha20-ietf-poly1305",
+            "password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "proxy-82",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -2378,7 +2095,7 @@
       }
     },
     {
-      "tag": "proxy-92",
+      "tag": "proxy-83",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -2396,7 +2113,7 @@
       }
     },
     {
-      "tag": "proxy-93",
+      "tag": "proxy-84",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -2414,7 +2131,7 @@
       }
     },
     {
-      "tag": "proxy-94",
+      "tag": "proxy-85",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -2432,7 +2149,7 @@
       }
     },
     {
-      "tag": "proxy-95",
+      "tag": "proxy-86",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -2450,7 +2167,7 @@
       }
     },
     {
-      "tag": "proxy-96",
+      "tag": "proxy-87",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -2468,7 +2185,7 @@
       }
     },
     {
-      "tag": "proxy-97",
+      "tag": "proxy-88",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -2486,7 +2203,7 @@
       }
     },
     {
-      "tag": "proxy-98",
+      "tag": "proxy-89",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -2504,7 +2221,7 @@
       }
     },
     {
-      "tag": "proxy-99",
+      "tag": "proxy-90",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -2522,7 +2239,7 @@
       }
     },
     {
-      "tag": "proxy-100",
+      "tag": "proxy-91",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -2540,7 +2257,7 @@
       }
     },
     {
-      "tag": "proxy-101",
+      "tag": "proxy-92",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -2558,7 +2275,7 @@
       }
     },
     {
-      "tag": "proxy-102",
+      "tag": "proxy-93",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -2576,7 +2293,7 @@
       }
     },
     {
-      "tag": "proxy-103",
+      "tag": "proxy-94",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -2594,7 +2311,25 @@
       }
     },
     {
-      "tag": "proxy-104",
+      "tag": "proxy-95",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "188.214.157.58",
+            "port": 990,
+            "method": "chacha20-ietf-poly1305",
+            "password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "proxy-96",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -2612,7 +2347,7 @@
       }
     },
     {
-      "tag": "proxy-105",
+      "tag": "proxy-97",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -2630,7 +2365,7 @@
       }
     },
     {
-      "tag": "proxy-106",
+      "tag": "proxy-98",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -2648,7 +2383,7 @@
       }
     },
     {
-      "tag": "proxy-107",
+      "tag": "proxy-99",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -2666,7 +2401,7 @@
       }
     },
     {
-      "tag": "proxy-108",
+      "tag": "proxy-100",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -2684,7 +2419,7 @@
       }
     },
     {
-      "tag": "proxy-109",
+      "tag": "proxy-101",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -2702,7 +2437,7 @@
       }
     },
     {
-      "tag": "proxy-110",
+      "tag": "proxy-102",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -2720,7 +2455,7 @@
       }
     },
     {
-      "tag": "proxy-111",
+      "tag": "proxy-103",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -2738,7 +2473,7 @@
       }
     },
     {
-      "tag": "proxy-112",
+      "tag": "proxy-104",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -2756,7 +2491,7 @@
       }
     },
     {
-      "tag": "proxy-113",
+      "tag": "proxy-105",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -2774,7 +2509,7 @@
       }
     },
     {
-      "tag": "proxy-114",
+      "tag": "proxy-106",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -2792,7 +2527,7 @@
       }
     },
     {
-      "tag": "proxy-115",
+      "tag": "proxy-107",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -2810,7 +2545,7 @@
       }
     },
     {
-      "tag": "proxy-116",
+      "tag": "proxy-108",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -2828,7 +2563,7 @@
       }
     },
     {
-      "tag": "proxy-117",
+      "tag": "proxy-109",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -2846,7 +2581,7 @@
       }
     },
     {
-      "tag": "proxy-118",
+      "tag": "proxy-110",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -2864,7 +2599,7 @@
       }
     },
     {
-      "tag": "proxy-119",
+      "tag": "proxy-111",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -2882,7 +2617,7 @@
       }
     },
     {
-      "tag": "proxy-120",
+      "tag": "proxy-112",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -2900,7 +2635,7 @@
       }
     },
     {
-      "tag": "proxy-121",
+      "tag": "proxy-113",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -2918,7 +2653,7 @@
       }
     },
     {
-      "tag": "proxy-122",
+      "tag": "proxy-114",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -2936,7 +2671,7 @@
       }
     },
     {
-      "tag": "proxy-123",
+      "tag": "proxy-115",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -2954,7 +2689,7 @@
       }
     },
     {
-      "tag": "proxy-124",
+      "tag": "proxy-116",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -2972,7 +2707,7 @@
       }
     },
     {
-      "tag": "proxy-125",
+      "tag": "proxy-117",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -2990,7 +2725,7 @@
       }
     },
     {
-      "tag": "proxy-126",
+      "tag": "proxy-118",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -3008,7 +2743,7 @@
       }
     },
     {
-      "tag": "proxy-127",
+      "tag": "proxy-119",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -3026,7 +2761,7 @@
       }
     },
     {
-      "tag": "proxy-128",
+      "tag": "proxy-120",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -3044,7 +2779,7 @@
       }
     },
     {
-      "tag": "proxy-129",
+      "tag": "proxy-121",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -3062,7 +2797,7 @@
       }
     },
     {
-      "tag": "proxy-130",
+      "tag": "proxy-122",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -3080,7 +2815,43 @@
       }
     },
     {
-      "tag": "proxy-131",
+      "tag": "proxy-123",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "5.181.2.76",
+            "port": 36608,
+            "method": "chacha20-ietf-poly1305",
+            "password": "JOZ5Mb3nJCmmoKhd8Cc9aC",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "proxy-124",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "media.mothyleela.cfd",
+            "port": 40521,
+            "method": "chacha20-ietf-poly1305",
+            "password": "LYW2w9fwdrwj2qC9NyTBuBNKQJUvkKnCp9UxVnFW6LqeSpiCcnzV1cMohBUnCCWBkjkp83rV9wWeYQQqUZwMuYu1YyCt17tW",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "proxy-125",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -3098,7 +2869,7 @@
       }
     },
     {
-      "tag": "proxy-132",
+      "tag": "proxy-126",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -3116,12 +2887,120 @@
       }
     },
     {
-      "tag": "proxy-133",
+      "tag": "proxy-127",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
           {
             "address": "admin.c1.webramz.co",
+            "port": 443,
+            "method": "chacha20-ietf-poly1305",
+            "password": "W74XFALLLuw6m5IA",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "proxy-128",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "admin.c1.webramz.co",
+            "port": 443,
+            "method": "chacha20-ietf-poly1305",
+            "password": "W74XFALLLuw6m5IA",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "proxy-129",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "admin.c1.webramz.co",
+            "port": 443,
+            "method": "chacha20-ietf-poly1305",
+            "password": "W74XFALLLuw6m5IA",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "proxy-130",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "series-a1.samanehha.co",
+            "port": 443,
+            "method": "chacha20-ietf-poly1305",
+            "password": "W74XFALLLuw6m5IA",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "proxy-131",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "series-a1.samanehha.co",
+            "port": 443,
+            "method": "chacha20-ietf-poly1305",
+            "password": "W74XFALLLuw6m5IA",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "proxy-132",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "series-a1.samanehha.co",
+            "port": 443,
+            "method": "chacha20-ietf-poly1305",
+            "password": "W74XFALLLuw6m5IA",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "proxy-133",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "series-a1.samanehha.co",
             "port": 443,
             "method": "chacha20-ietf-poly1305",
             "password": "W74XFALLLuw6m5IA",
@@ -3139,7 +3018,7 @@
       "settings": {
         "servers": [
           {
-            "address": "admin.c1.webramz.co",
+            "address": "series-a1.samanehha.co",
             "port": 443,
             "method": "chacha20-ietf-poly1305",
             "password": "W74XFALLLuw6m5IA",
@@ -3157,7 +3036,7 @@
       "settings": {
         "servers": [
           {
-            "address": "admin.c1.webramz.co",
+            "address": "series-a2.samanehha.co",
             "port": 443,
             "method": "chacha20-ietf-poly1305",
             "password": "W74XFALLLuw6m5IA",
@@ -3175,7 +3054,7 @@
       "settings": {
         "servers": [
           {
-            "address": "series-a1.samanehha.co",
+            "address": "series-a2.samanehha.co",
             "port": 443,
             "method": "chacha20-ietf-poly1305",
             "password": "W74XFALLLuw6m5IA",
@@ -3193,10 +3072,10 @@
       "settings": {
         "servers": [
           {
-            "address": "series-a1.samanehha.co",
-            "port": 443,
+            "address": "5.188.4.103",
+            "port": 11204,
             "method": "chacha20-ietf-poly1305",
-            "password": "W74XFALLLuw6m5IA",
+            "password": "a7c205642b302c20",
             "level": 8
           }
         ]
@@ -3211,10 +3090,10 @@
       "settings": {
         "servers": [
           {
-            "address": "series-a1.samanehha.co",
-            "port": 443,
+            "address": "213.156.137.142",
+            "port": 43659,
             "method": "chacha20-ietf-poly1305",
-            "password": "W74XFALLLuw6m5IA",
+            "password": "a8201bbd740420bb",
             "level": 8
           }
         ]
@@ -3225,132 +3104,6 @@
     },
     {
       "tag": "proxy-139",
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "series-a1.samanehha.co",
-            "port": 443,
-            "method": "chacha20-ietf-poly1305",
-            "password": "W74XFALLLuw6m5IA",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "proxy-140",
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "series-a1.samanehha.co",
-            "port": 443,
-            "method": "chacha20-ietf-poly1305",
-            "password": "W74XFALLLuw6m5IA",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "proxy-141",
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "series-a2.samanehha.co",
-            "port": 443,
-            "method": "chacha20-ietf-poly1305",
-            "password": "W74XFALLLuw6m5IA",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "proxy-142",
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "series-a2.samanehha.co",
-            "port": 443,
-            "method": "chacha20-ietf-poly1305",
-            "password": "W74XFALLLuw6m5IA",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "proxy-143",
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "5.188.4.103",
-            "port": 11204,
-            "method": "chacha20-ietf-poly1305",
-            "password": "a7c205642b302c20",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "proxy-144",
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "213.156.137.142",
-            "port": 43659,
-            "method": "chacha20-ietf-poly1305",
-            "password": "a8201bbd740420bb",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "proxy-145",
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "213.156.137.142",
-            "port": 43659,
-            "method": "chacha20-ietf-poly1305",
-            "password": "a8201bbd740420bb",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "proxy-146",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -3368,439 +3121,7 @@
       }
     },
     {
-      "tag": "proxy-147",
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "46.250.241.55",
-            "port": 45720,
-            "method": "chacha20-ietf-poly1305",
-            "password": "c90d63dc7a6203af",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "proxy-148",
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "38.54.29.57",
-            "port": 11201,
-            "method": "chacha20-ietf-poly1305",
-            "password": "cb955c8530320120",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "proxy-149",
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "57.129.95.198",
-            "port": 11201,
-            "method": "chacha20-ietf-poly1305",
-            "password": "d6b0973401858b29",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "proxy-150",
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "57.129.95.38",
-            "port": 11201,
-            "method": "chacha20-ietf-poly1305",
-            "password": "f54cdee10f8b25ce",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "proxy-151",
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "tinkered-pennies-puppies.freesocks.work",
-            "port": 443,
-            "method": "chacha20-ietf-poly1305",
-            "password": "hbGrpfvNrJsUmKmPbR3iY2",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "proxy-152",
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "82.38.31.176",
-            "port": 8080,
-            "method": "chacha20-ietf-poly1305",
-            "password": "k1dBOmOB4oqi7Ump37a1bQ",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "proxy-153",
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "82.38.31.179",
-            "port": 8080,
-            "method": "chacha20-ietf-poly1305",
-            "password": "k1dBOmOB4oqi7Ump37a1bQ",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "proxy-154",
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "82.38.31.184",
-            "port": 8080,
-            "method": "chacha20-ietf-poly1305",
-            "password": "k1dBOmOB4oqi7Ump37a1bQ",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "proxy-155",
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "82.38.31.184",
-            "port": 8080,
-            "method": "chacha20-ietf-poly1305",
-            "password": "k1dBOmOB4oqi7Ump37a1bQ",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "proxy-156",
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "82.38.31.187",
-            "port": 8080,
-            "method": "chacha20-ietf-poly1305",
-            "password": "k1dBOmOB4oqi7Ump37a1bQ",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "proxy-157",
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "82.38.31.190",
-            "port": 8080,
-            "method": "chacha20-ietf-poly1305",
-            "password": "k1dBOmOB4oqi7Ump37a1bQ",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "proxy-158",
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "82.38.31.191",
-            "port": 8080,
-            "method": "chacha20-ietf-poly1305",
-            "password": "k1dBOmOB4oqi7Ump37a1bQ",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "proxy-159",
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "82.38.31.194",
-            "port": 8080,
-            "method": "chacha20-ietf-poly1305",
-            "password": "k1dBOmOB4oqi7Ump37a1bQ",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "proxy-160",
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "82.38.31.199",
-            "port": 8080,
-            "method": "chacha20-ietf-poly1305",
-            "password": "k1dBOmOB4oqi7Ump37a1bQ",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "proxy-161",
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "82.38.31.202",
-            "port": 8080,
-            "method": "chacha20-ietf-poly1305",
-            "password": "k1dBOmOB4oqi7Ump37a1bQ",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "proxy-162",
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "82.38.31.205",
-            "port": 8080,
-            "method": "chacha20-ietf-poly1305",
-            "password": "k1dBOmOB4oqi7Ump37a1bQ",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "proxy-163",
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "82.38.31.205",
-            "port": 8080,
-            "method": "chacha20-ietf-poly1305",
-            "password": "k1dBOmOB4oqi7Ump37a1bQ",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "proxy-164",
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "82.38.31.208",
-            "port": 8080,
-            "method": "chacha20-ietf-poly1305",
-            "password": "k1dBOmOB4oqi7Ump37a1bQ",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "proxy-165",
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "82.38.31.210",
-            "port": 8080,
-            "method": "chacha20-ietf-poly1305",
-            "password": "k1dBOmOB4oqi7Ump37a1bQ",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "proxy-166",
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "82.38.31.210",
-            "port": 8080,
-            "method": "chacha20-ietf-poly1305",
-            "password": "k1dBOmOB4oqi7Ump37a1bQ",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "proxy-167",
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "82.38.31.214",
-            "port": 8080,
-            "method": "chacha20-ietf-poly1305",
-            "password": "k1dBOmOB4oqi7Ump37a1bQ",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "proxy-168",
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "82.38.31.217",
-            "port": 8080,
-            "method": "chacha20-ietf-poly1305",
-            "password": "k1dBOmOB4oqi7Ump37a1bQ",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "proxy-169",
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "82.38.31.218",
-            "port": 8080,
-            "method": "chacha20-ietf-poly1305",
-            "password": "k1dBOmOB4oqi7Ump37a1bQ",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "proxy-170",
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "82.38.31.176",
-            "port": 8080,
-            "method": "chacha20-ietf-poly1305",
-            "password": "k1dBOmOB4oqi7Ump37a1bQ",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "proxy-171",
+      "tag": "proxy-140",
       "protocol": "vmess",
       "settings": {
         "vnext": [
@@ -3824,7 +3145,85 @@
       }
     },
     {
-      "tag": "proxy-172",
+      "tag": "proxy-141",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "n1752248951.lie5d.cyou",
+            "port": 443,
+            "users": [
+              {
+                "id": "bf2ce3c2-339f-4926-b92d-b7d83af1b3b6",
+                "alterId": 0,
+                "security": "auto",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "wsSettings": {
+          "path": "/",
+          "headers": {
+            "Host": "n1752248951.lie5d.cyou"
+          }
+        },
+        "tlsSettings": {
+          "serverName": "",
+          "allowInsecure": false,
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ],
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "proxy-142",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "n1753101277.4u9ma.icu",
+            "port": 443,
+            "users": [
+              {
+                "id": "6ea48dfe-7de2-45dc-9267-d4d9effad9fc",
+                "alterId": 0,
+                "security": "auto",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "wsSettings": {
+          "path": "/",
+          "headers": {
+            "Host": "n1753101277.4u9ma.icu"
+          }
+        },
+        "tlsSettings": {
+          "serverName": "n1753101277.4u9ma.icu",
+          "allowInsecure": false,
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ],
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "proxy-143",
       "protocol": "vmess",
       "settings": {
         "vnext": [
@@ -3863,7 +3262,7 @@
       }
     },
     {
-      "tag": "proxy-173",
+      "tag": "proxy-144",
       "protocol": "vmess",
       "settings": {
         "vnext": [
@@ -3902,154 +3301,7 @@
       }
     },
     {
-      "tag": "proxy-174",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "n1761214904.wpg27.xyz",
-            "port": 443,
-            "users": [
-              {
-                "id": "7f6f64ae-3778-434c-adfc-95cb67ee8b73",
-                "alterId": 0,
-                "security": "auto",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "wsSettings": {
-          "path": "/",
-          "headers": {
-            "Host": "n1761214904.wpg27.xyz"
-          }
-        },
-        "tlsSettings": {
-          "serverName": "n1761214904.wpg27.xyz",
-          "allowInsecure": false,
-          "alpn": [
-            "h2",
-            "http/1.1"
-          ],
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "tag": "proxy-175",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "n1761214905.wpg27.xyz",
-            "port": 443,
-            "users": [
-              {
-                "id": "b1d3007c-441a-42d5-84b5-20301c46fa2c",
-                "alterId": 0,
-                "security": "auto",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "wsSettings": {
-          "path": "/",
-          "headers": {
-            "Host": "n1761214905.wpg27.xyz"
-          }
-        },
-        "tlsSettings": {
-          "serverName": "",
-          "allowInsecure": false,
-          "alpn": [
-            "h2",
-            "http/1.1"
-          ],
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "tag": "proxy-176",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "n1761214919.mv7wh.tech",
-            "port": 443,
-            "users": [
-              {
-                "id": "c592f040-faff-47dc-a464-9bccf2dd4e7b",
-                "alterId": 0,
-                "security": "auto",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "wsSettings": {
-          "path": "/",
-          "headers": {
-            "Host": "n1761214919.mv7wh.tech"
-          }
-        },
-        "tlsSettings": {
-          "serverName": "n1761214919.mv7wh.tech",
-          "allowInsecure": false,
-          "alpn": [
-            "h2",
-            "http/1.1"
-          ],
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "tag": "proxy-177",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "45.12.132.183",
-            "port": 80,
-            "users": [
-              {
-                "id": "703f722a-4bdf-4e9d-9afd-a681fdf87c74",
-                "alterId": 0,
-                "security": "auto",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/vmess/",
-          "headers": {
-            "Host": "45.12.132.183"
-          }
-        }
-      }
-    },
-    {
-      "tag": "proxy-178",
+      "tag": "proxy-145",
       "protocol": "vmess",
       "settings": {
         "vnext": [
@@ -4079,97 +3331,7 @@
       }
     },
     {
-      "tag": "proxy-179",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "38.107.234.57",
-            "port": 80,
-            "users": [
-              {
-                "id": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
-                "alterId": 0,
-                "security": "auto",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/vmess/",
-          "headers": {
-            "Host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
-          }
-        }
-      }
-    },
-    {
-      "tag": "proxy-180",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "3h-kazakhstan1.09vpn.com",
-            "port": 80,
-            "users": [
-              {
-                "id": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
-                "alterId": 0,
-                "security": "auto",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/vmess/",
-          "headers": {
-            "Host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
-          }
-        }
-      }
-    },
-    {
-      "tag": "proxy-181",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "nmjki.2yo.ccwu.cc",
-            "port": 80,
-            "users": [
-              {
-                "id": "9b354a64-81f6-4a15-a127-337cd17e25ba",
-                "alterId": 0,
-                "security": "auto",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/7t9M6fIZbmR7zklVEUuTu7GKK",
-          "headers": {
-            "Host": "nmjki.2yo.ccwu.cc"
-          }
-        }
-      }
-    },
-    {
-      "tag": "proxy-182",
+      "tag": "proxy-146",
       "protocol": "vmess",
       "settings": {
         "vnext": [
@@ -4193,55 +3355,7 @@
       }
     },
     {
-      "tag": "proxy-183",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "94.232.247.165",
-            "port": 45653,
-            "users": [
-              {
-                "id": "9e91d19a-c73f-4276-adbc-b337c374259c",
-                "alterId": 0,
-                "security": "auto",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      }
-    },
-    {
-      "tag": "proxy-184",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "94.232.247.165",
-            "port": 45653,
-            "users": [
-              {
-                "id": "9e91d19a-c73f-4276-adbc-b337c374259c",
-                "alterId": 0,
-                "security": "auto",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      }
-    },
-    {
-      "tag": "proxy-185",
+      "tag": "proxy-147",
       "protocol": "vmess",
       "settings": {
         "vnext": [
@@ -4265,187 +3379,7 @@
       }
     },
     {
-      "tag": "proxy-186",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "172.67.157.61",
-            "port": 80,
-            "users": [
-              {
-                "id": "4e45c1b4-9107-45dd-9995-cdf7cbb44d9d",
-                "alterId": 0,
-                "security": "auto",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/iSRWSKUJKNuXvVzsYHmsMrnO",
-          "headers": {
-            "Host": "kklo.1xq.indevs.in"
-          }
-        }
-      }
-    },
-    {
-      "tag": "proxy-187",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "172.67.215.240",
-            "port": 80,
-            "users": [
-              {
-                "id": "4e45c1b4-9107-45dd-9995-cdf7cbb44d9d",
-                "alterId": 0,
-                "security": "auto",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/iSRWSKUJKNuXvVzsYHmsMrnO",
-          "headers": {
-            "Host": "yyynm.2nn.ccwu.cc"
-          }
-        }
-      }
-    },
-    {
-      "tag": "proxy-188",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "104.21.56.251",
-            "port": 80,
-            "users": [
-              {
-                "id": "4e45c1b4-9107-45dd-9995-cdf7cbb44d9d",
-                "alterId": 0,
-                "security": "auto",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/iSRWSKUJKNuXvVzsYHmsMrnO",
-          "headers": {
-            "Host": "bmk.1xq.indevs.in"
-          }
-        }
-      }
-    },
-    {
-      "tag": "proxy-189",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "104.21.7.101",
-            "port": 80,
-            "users": [
-              {
-                "id": "4e45c1b4-9107-45dd-9995-cdf7cbb44d9d",
-                "alterId": 0,
-                "security": "auto",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/iSRWSKUJKNuXvVzsYHmsMrnO",
-          "headers": {
-            "Host": "gbnh.0nn.ccwu.cc"
-          }
-        }
-      }
-    },
-    {
-      "tag": "proxy-190",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "104.21.86.35",
-            "port": 80,
-            "users": [
-              {
-                "id": "4e45c1b4-9107-45dd-9995-cdf7cbb44d9d",
-                "alterId": 0,
-                "security": "auto",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/iSRWSKUJKNuXvVzsYHmsMrnO",
-          "headers": {
-            "Host": "yyhju.1x6.indevs.in"
-          }
-        }
-      }
-    },
-    {
-      "tag": "proxy-191",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "104.21.91.128",
-            "port": 80,
-            "users": [
-              {
-                "id": "4e45c1b4-9107-45dd-9995-cdf7cbb44d9d",
-                "alterId": 0,
-                "security": "auto",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/iSRWSKUJKNuXvVzsYHmsMrnO",
-          "headers": {
-            "Host": "nmki.1yy.ccwu.cc"
-          }
-        }
-      }
-    },
-    {
-      "tag": "proxy-192",
+      "tag": "proxy-148",
       "protocol": "vmess",
       "settings": {
         "vnext": [
@@ -4469,31 +3403,7 @@
       }
     },
     {
-      "tag": "proxy-193",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "192.227.249.227",
-            "port": 27641,
-            "users": [
-              {
-                "id": "3b134252-e7c2-43df-98b7-da204104aa79",
-                "alterId": 0,
-                "security": "auto",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      }
-    },
-    {
-      "tag": "proxy-194",
+      "tag": "proxy-149",
       "protocol": "vmess",
       "settings": {
         "vnext": [
@@ -4514,168 +3424,6 @@
       "streamSettings": {
         "network": "tcp",
         "security": "none"
-      }
-    },
-    {
-      "tag": "proxy-195",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "57.129.132.223",
-            "port": 80,
-            "users": [
-              {
-                "id": "a25cbf11-2908-4a1b-a3a8-9a571777dca3",
-                "alterId": 0,
-                "security": "auto",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/vmess/",
-          "headers": {
-            "Host": "google.com"
-          }
-        }
-      }
-    },
-    {
-      "tag": "proxy-196",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "n1752248946.4u9ma.icu",
-            "port": 443,
-            "users": [
-              {
-                "id": "ef167986-d154-4409-88b1-757efb6ae823",
-                "alterId": 0,
-                "security": "auto",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "wsSettings": {
-          "path": "/",
-          "headers": {
-            "Host": "n1752248946.4u9ma.icu"
-          }
-        },
-        "tlsSettings": {
-          "serverName": "n1752248946.4u9ma.icu",
-          "allowInsecure": false,
-          "alpn": [
-            "h2",
-            "http/1.1"
-          ],
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "tag": "proxy-197",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "n1761296897.lie5d.cyou",
-            "port": 443,
-            "users": [
-              {
-                "id": "5ecc3086-93cf-42e3-956b-f2180e042537",
-                "alterId": 0,
-                "security": "auto",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "wsSettings": {
-          "path": "/",
-          "headers": {
-            "Host": "n1761296897.lie5d.cyou"
-          }
-        },
-        "tlsSettings": {
-          "serverName": "n1761296897.lie5d.cyou",
-          "allowInsecure": false,
-          "alpn": [
-            "h2",
-            "http/1.1"
-          ],
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "tag": "proxy-198",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "45.89.52.207",
-            "port": 39651,
-            "users": [
-              {
-                "id": "ac4c12c5-45f2-4398-a718-9983941ede2b",
-                "alterId": 0,
-                "security": "auto",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      }
-    },
-    {
-      "tag": "proxy-199",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "3h-kazakhstan1.09vpn.com",
-            "port": 80,
-            "users": [
-              {
-                "id": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
-                "alterId": 0,
-                "security": "auto",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/vmess/",
-          "headers": {
-            "Host": "3h-kazakhstan1.09vpn.com"
-          }
-        }
       }
     },
     {
