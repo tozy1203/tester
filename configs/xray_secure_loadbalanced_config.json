@@ -60,35 +60,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "154.83.159.144",
-            "port": 8443,
-            "users": [
-              {
-                "id": "0047a8bc-0025-4d45-899b-c75c669f3ede",
-                "flow": "xtls-rprx-vision",
-                "encryption": "none",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "storage.yandex.net",
-          "allowInsecure": false,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "tag": "proxy-2",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "154.83.159.14",
             "port": 8443,
             "users": [
@@ -109,6 +80,34 @@
           "serverName": "storage.yandex.net",
           "allowInsecure": false,
           "fingerprint": "firefox"
+        }
+      }
+    },
+    {
+      "tag": "proxy-2",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "154.83.159.240",
+            "port": 8443,
+            "users": [
+              {
+                "id": "0047a8bc-0025-4d45-899b-c75c669f3ede",
+                "flow": "xtls-rprx-vision",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "storage.yandex.net",
+          "allowInsecure": false
         }
       }
     },
@@ -146,7 +145,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "154.83.159.240",
+            "address": "178.248.232.186",
             "port": 8443,
             "users": [
               {
@@ -192,41 +191,13 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "storage.yandex.net",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "proxy-6",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "178.248.232.186",
-            "port": 8443,
-            "users": [
-              {
-                "id": "0047a8bc-0025-4d45-899b-c75c669f3ede",
-                "flow": "xtls-rprx-vision",
-                "encryption": "none",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "storage.yandex.net",
           "allowInsecure": false,
           "fingerprint": "firefox"
         }
       }
     },
     {
-      "tag": "proxy-7",
+      "tag": "proxy-6",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -255,36 +226,7 @@
       }
     },
     {
-      "tag": "proxy-8",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "fn2-unlimited.pavilof.ir",
-            "port": 1020,
-            "users": [
-              {
-                "id": "01aacd3b-fdda-4e3f-894b-bc380f184fe1",
-                "flow": "xtls-rprx-vision",
-                "encryption": "none",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "yahoo.com",
-          "allowInsecure": false,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "tag": "proxy-9",
+      "tag": "proxy-7",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -312,17 +254,17 @@
       }
     },
     {
-      "tag": "proxy-10",
+      "tag": "proxy-8",
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "31.77.157.177",
-            "port": 2055,
+            "address": "104.16.75.234",
+            "port": 443,
             "users": [
               {
-                "id": "040782e7-07a7-4e15-b2a0-ea63aaac17fc",
-                "flow": "xtls-rprx-vision",
+                "id": "03707fb7-0990-440f-88f6-b0e0f7242a38",
+                "flow": "",
                 "encryption": "none",
                 "level": 8
               }
@@ -331,17 +273,26 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
+        "network": "ws",
         "security": "tls",
+        "wsSettings": {
+          "path": "/",
+          "headers": {
+            "Host": "us-1.ariyuz.org"
+          }
+        },
         "tlsSettings": {
-          "serverName": "www.icloud.com",
+          "serverName": "server-ir-4.ariyuz.org",
           "allowInsecure": false,
+          "alpn": [
+            "http/1.1"
+          ],
           "fingerprint": "chrome"
         }
       }
     },
     {
-      "tag": "proxy-11",
+      "tag": "proxy-9",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -370,7 +321,36 @@
       }
     },
     {
-      "tag": "proxy-12",
+      "tag": "proxy-10",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "47.253.226.114",
+            "port": 443,
+            "users": [
+              {
+                "id": "055a1ce8-2a16-4a0d-a2c2-22826c9b2413",
+                "flow": "xtls-rprx-vision",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.cloudflare.com",
+          "allowInsecure": false,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "proxy-11",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -393,6 +373,34 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "storage.yandex.net",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "proxy-12",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "138.124.52.85",
+            "port": 443,
+            "users": [
+              {
+                "id": "09a4bf7f-f997-4174-8bef-9fab75aa186e",
+                "flow": "xtls-rprx-vision",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.google.com",
           "allowInsecure": false
         }
       }
@@ -431,11 +439,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "138.124.52.85",
-            "port": 443,
+            "address": "207.57.129.74",
+            "port": 51864,
             "users": [
               {
-                "id": "09a4bf7f-f997-4174-8bef-9fab75aa186e",
+                "id": "0bef99f1-1ab7-4949-8991-80914d9c7535",
                 "flow": "xtls-rprx-vision",
                 "encryption": "none",
                 "level": 8
@@ -448,7 +456,7 @@
         "network": "tcp",
         "security": "tls",
         "tlsSettings": {
-          "serverName": "www.google.com",
+          "serverName": "dash.cloudflare.com",
           "allowInsecure": false
         }
       }
@@ -487,11 +495,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "207.57.129.74",
-            "port": 51864,
+            "address": "195.74.93.254",
+            "port": 443,
             "users": [
               {
-                "id": "0bef99f1-1ab7-4949-8991-80914d9c7535",
+                "id": "146eb6cf-a99c-4022-85ca-022cf81502dc",
                 "flow": "xtls-rprx-vision",
                 "encryption": "none",
                 "level": 8
@@ -504,8 +512,9 @@
         "network": "tcp",
         "security": "tls",
         "tlsSettings": {
-          "serverName": "dash.cloudflare.com",
-          "allowInsecure": false
+          "serverName": "web.max.ru",
+          "allowInsecure": false,
+          "fingerprint": "chrome"
         }
       }
     },
@@ -540,20 +549,14 @@
     },
     {
       "tag": "proxy-18",
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "195.74.93.254",
+            "address": "38.60.168.129",
             "port": 443,
-            "users": [
-              {
-                "id": "146eb6cf-a99c-4022-85ca-022cf81502dc",
-                "flow": "xtls-rprx-vision",
-                "encryption": "none",
-                "level": 8
-              }
-            ]
+            "password": "Lw_DP4+W.J5K33MD2Jy5zQVuT5n71+=BcD",
+            "level": 8
           }
         ]
       },
@@ -561,9 +564,12 @@
         "network": "tcp",
         "security": "tls",
         "tlsSettings": {
-          "serverName": "web.max.ru",
+          "serverName": "38.60.168.129",
           "allowInsecure": false,
-          "fingerprint": "chrome"
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
         }
       }
     },
@@ -573,7 +579,193 @@
       "settings": {
         "servers": [
           {
-            "address": "104.16.72.50",
+            "address": "140.248.185.252",
+            "port": 443,
+            "password": "MITIVPN",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "wsSettings": {
+          "path": "/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=usa",
+          "headers": {
+            "Host": "mitivpn--------mitivpn.global.ssl.fastly.net"
+          }
+        },
+        "tlsSettings": {
+          "serverName": "ssl.fastly.com",
+          "allowInsecure": false,
+          "alpn": [
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "proxy-20",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "140.248.185.252",
+            "port": 443,
+            "password": "MITIVPN",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "wsSettings": {
+          "path": "/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=usa",
+          "headers": {
+            "Host": "mitivpn--------mitivpn.global.ssl.fastly.net"
+          }
+        },
+        "tlsSettings": {
+          "serverName": "ssl.fastly.com",
+          "allowInsecure": false,
+          "alpn": [
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "proxy-21",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "151.101.56.7",
+            "port": 443,
+            "password": "MITIVPN",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "wsSettings": {
+          "path": "/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=de",
+          "headers": {
+            "Host": "mitivpn-mitivpn-mitivpn.global.ssl.fastly.net"
+          }
+        },
+        "tlsSettings": {
+          "serverName": "ssl.fastly.com",
+          "allowInsecure": false,
+          "alpn": [
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "proxy-22",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "151.101.56.7",
+            "port": 443,
+            "password": "MITIVPN",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "wsSettings": {
+          "path": "/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=usa",
+          "headers": {
+            "Host": "mitivpn-mitivpn-mitivpn.global.ssl.fastly.net"
+          }
+        },
+        "tlsSettings": {
+          "serverName": "ssl.fastly.com",
+          "allowInsecure": false,
+          "alpn": [
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "proxy-23",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "151.101.56.7",
+            "port": 443,
+            "password": "MITIVPN",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "wsSettings": {
+          "path": "/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=de",
+          "headers": {
+            "Host": "mitivpn-mitivpn-mitivpn.global.ssl.fastly.net"
+          }
+        },
+        "tlsSettings": {
+          "serverName": "ssl.fastly.com",
+          "allowInsecure": false,
+          "alpn": [
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "proxy-24",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "151.101.56.7",
+            "port": 443,
+            "password": "MITIVPN",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "wsSettings": {
+          "path": "/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=usa",
+          "headers": {
+            "Host": "mitivpn-mitivpn-mitivpn.global.ssl.fastly.net"
+          }
+        },
+        "tlsSettings": {
+          "serverName": "ssl.fastly.com",
+          "allowInsecure": false,
+          "alpn": [
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "proxy-25",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "assets.fiverr.com",
             "port": 443,
             "password": "MITIVPN",
             "level": 8
@@ -599,105 +791,12 @@
       }
     },
     {
-      "tag": "proxy-20",
+      "tag": "proxy-26",
       "protocol": "trojan",
       "settings": {
         "servers": [
           {
-            "address": "45.130.125.2",
-            "port": 443,
-            "password": "MITIVPN",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "wsSettings": {
-          "path": "/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=GE",
-          "headers": {
-            "Host": "De-e-d.App-Cloud.ir"
-          }
-        },
-        "tlsSettings": {
-          "serverName": "deioej-ieid.App-Cloud.ir",
-          "allowInsecure": false,
-          "alpn": [
-            "http/1.1"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "proxy-21",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "45.130.125.2",
-            "port": 443,
-            "password": "MITIVPN",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "wsSettings": {
-          "path": "/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=GE",
-          "headers": {
-            "Host": "De-e-d.App-Cloud.ir"
-          }
-        },
-        "tlsSettings": {
-          "serverName": "deioej-ieid.App-Cloud.ir",
-          "allowInsecure": false,
-          "alpn": [
-            "http/1.1"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "proxy-22",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "45.130.125.2",
-            "port": 443,
-            "password": "MITIVPN",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "wsSettings": {
-          "path": "/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=GE",
-          "headers": {
-            "Host": "De-e-d.App-Cloud.ir"
-          }
-        },
-        "tlsSettings": {
-          "serverName": "deioej-ieid.App-Cloud.ir",
-          "allowInsecure": false,
-          "alpn": [
-            "http/1.1"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "proxy-23",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "45.80.111.7",
+            "address": "assets.fiverr.com",
             "port": 443,
             "password": "MITIVPN",
             "level": 8
@@ -723,105 +822,12 @@
       }
     },
     {
-      "tag": "proxy-24",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "89.116.250.135",
-            "port": 443,
-            "password": "MITIVPN",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "wsSettings": {
-          "path": "/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=USA",
-          "headers": {
-            "Host": "Ussa-Si-ieo.App-Cloud.ir"
-          }
-        },
-        "tlsSettings": {
-          "serverName": "ksidi-isid-d.App-Cloud.ir",
-          "allowInsecure": false,
-          "alpn": [
-            "http/1.1"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "proxy-25",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "89.116.250.135",
-            "port": 443,
-            "password": "MITIVPN",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "wsSettings": {
-          "path": "/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=USA",
-          "headers": {
-            "Host": "Ussa-Si-ieo.App-Cloud.ir"
-          }
-        },
-        "tlsSettings": {
-          "serverName": "ksidi-isid-d.App-Cloud.ir",
-          "allowInsecure": false,
-          "alpn": [
-            "http/1.1"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "proxy-26",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "assets.fiverr.com",
-            "port": 443,
-            "password": "MITIVPN",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "wsSettings": {
-          "path": "/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=GE",
-          "headers": {
-            "Host": "De-e-d.App-Cloud.ir"
-          }
-        },
-        "tlsSettings": {
-          "serverName": "deioej-ieid.App-Cloud.ir",
-          "allowInsecure": false,
-          "alpn": [
-            "http/1.1"
-          ]
-        }
-      }
-    },
-    {
       "tag": "proxy-27",
       "protocol": "trojan",
       "settings": {
         "servers": [
           {
-            "address": "assets.fiverr.com",
+            "address": "www.speedtest.net",
             "port": 443,
             "password": "MITIVPN",
             "level": 8
@@ -832,13 +838,13 @@
         "network": "ws",
         "security": "tls",
         "wsSettings": {
-          "path": "/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=USA",
+          "path": "/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=de",
           "headers": {
-            "Host": "Ussa-Si-ieo.App-Cloud.ir"
+            "Host": "de-Ge.MaQror.ir"
           }
         },
         "tlsSettings": {
-          "serverName": "ksidi-isid-d.App-Cloud.ir",
+          "serverName": "De-Ge-N.MaQror.ir",
           "allowInsecure": false,
           "alpn": [
             "http/1.1"
@@ -852,7 +858,7 @@
       "settings": {
         "servers": [
           {
-            "address": "hyperon.site",
+            "address": "www.speedtest.net",
             "port": 443,
             "password": "MITIVPN",
             "level": 8
@@ -863,13 +869,13 @@
         "network": "ws",
         "security": "tls",
         "wsSettings": {
-          "path": "/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=GE",
+          "path": "/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=usa",
           "headers": {
-            "Host": "De-e-d.App-Cloud.ir"
+            "Host": "us-sss-us.MaQror.ir"
           }
         },
         "tlsSettings": {
-          "serverName": "deioej-ieid.App-Cloud.ir",
+          "serverName": "u---as.MaQror.ir",
           "allowInsecure": false,
           "alpn": [
             "http/1.1"
@@ -883,9 +889,9 @@
       "settings": {
         "servers": [
           {
-            "address": "hyperon.site",
+            "address": "104.26.4.60",
             "port": 443,
-            "password": "MITIVPN",
+            "password": "MiTiVPN",
             "level": 8
           }
         ]
@@ -894,13 +900,13 @@
         "network": "ws",
         "security": "tls",
         "wsSettings": {
-          "path": "/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=USA",
+          "path": "/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=Nl",
           "headers": {
-            "Host": "Ussa-Si-ieo.App-Cloud.ir"
+            "Host": "N-l.MaQror.ir"
           }
         },
         "tlsSettings": {
-          "serverName": "ksidi-isid-d.App-Cloud.ir",
+          "serverName": "NL-L-ll.MaQror.ir",
           "allowInsecure": false,
           "alpn": [
             "http/1.1"
@@ -914,9 +920,9 @@
       "settings": {
         "servers": [
           {
-            "address": "nexigen.pro",
+            "address": "104.26.4.60",
             "port": 443,
-            "password": "MITIVPN",
+            "password": "MiTiVPN",
             "level": 8
           }
         ]
@@ -925,13 +931,13 @@
         "network": "ws",
         "security": "tls",
         "wsSettings": {
-          "path": "/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=GE",
+          "path": "/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=Nl",
           "headers": {
-            "Host": "De-e-d.App-Cloud.ir"
+            "Host": "N-l.MaQror.ir"
           }
         },
         "tlsSettings": {
-          "serverName": "deioej-ieid.App-Cloud.ir",
+          "serverName": "NL-L-ll.MaQror.ir",
           "allowInsecure": false,
           "alpn": [
             "http/1.1"
@@ -945,9 +951,9 @@
       "settings": {
         "servers": [
           {
-            "address": "nexigen.pro",
+            "address": "167.82.101.252",
             "port": 443,
-            "password": "MITIVPN",
+            "password": "MiTiVPN",
             "level": 8
           }
         ]
@@ -956,13 +962,13 @@
         "network": "ws",
         "security": "tls",
         "wsSettings": {
-          "path": "/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=USA",
+          "path": "/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=sw",
           "headers": {
-            "Host": "Ussa-Si-ieo.App-Cloud.ir"
+            "Host": "mitivpn-mitivpn-mitivpn.global.ssl.fastly.net"
           }
         },
         "tlsSettings": {
-          "serverName": "ksidi-isid-d.App-Cloud.ir",
+          "serverName": "ssl.fastly.com",
           "allowInsecure": false,
           "alpn": [
             "http/1.1"
@@ -976,7 +982,7 @@
       "settings": {
         "servers": [
           {
-            "address": "104.16.72.2",
+            "address": "167.82.101.252",
             "port": 443,
             "password": "MiTiVPN",
             "level": 8
@@ -987,13 +993,13 @@
         "network": "ws",
         "security": "tls",
         "wsSettings": {
-          "path": "/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=NL",
+          "path": "/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=sw",
           "headers": {
-            "Host": "sjus-kdid-iodp.App-Cloud.ir"
+            "Host": "mitivpn-mitivpn-mitivpn.global.ssl.fastly.net"
           }
         },
         "tlsSettings": {
-          "serverName": "nl-ll-nl.App-Cloud.ir",
+          "serverName": "ssl.fastly.com",
           "allowInsecure": false,
           "alpn": [
             "http/1.1"
@@ -1007,7 +1013,7 @@
       "settings": {
         "servers": [
           {
-            "address": "104.16.72.2",
+            "address": "199.232.237.250",
             "port": 443,
             "password": "MiTiVPN",
             "level": 8
@@ -1018,13 +1024,13 @@
         "network": "ws",
         "security": "tls",
         "wsSettings": {
-          "path": "/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=sw",
+          "path": "/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=nl",
           "headers": {
-            "Host": "sw-w-e.MaQror.ir"
+            "Host": "mitivpn--------mitivpn.global.ssl.fastly.net"
           }
         },
         "tlsSettings": {
-          "serverName": "sww-w.MaQror.ir",
+          "serverName": "ssl.fastly.com",
           "allowInsecure": false,
           "alpn": [
             "http/1.1"
@@ -1038,7 +1044,7 @@
       "settings": {
         "servers": [
           {
-            "address": "104.16.72.2",
+            "address": "199.232.237.250",
             "port": 443,
             "password": "MiTiVPN",
             "level": 8
@@ -1049,13 +1055,13 @@
         "network": "ws",
         "security": "tls",
         "wsSettings": {
-          "path": "/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=NL",
+          "path": "/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=nl",
           "headers": {
-            "Host": "sjus-kdid-iodp.App-Cloud.ir"
+            "Host": "mitivpn--------mitivpn.global.ssl.fastly.net"
           }
         },
         "tlsSettings": {
-          "serverName": "nl-ll-nl.App-Cloud.ir",
+          "serverName": "ssl.fastly.com",
           "allowInsecure": false,
           "alpn": [
             "http/1.1"
@@ -1069,7 +1075,7 @@
       "settings": {
         "servers": [
           {
-            "address": "104.16.72.50",
+            "address": "199.232.78.140",
             "port": 443,
             "password": "MiTiVPN",
             "level": 8
@@ -1082,11 +1088,11 @@
         "wsSettings": {
           "path": "/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=fl",
           "headers": {
-            "Host": "fl-ll-i.App-Cloud.ir"
+            "Host": "mitivpn-mitivpn-mitivpn.global.ssl.fastly.net"
           }
         },
         "tlsSettings": {
-          "serverName": "Fl-u-ueisi.App-Cloud.ir",
+          "serverName": "ssl.fastly.com",
           "allowInsecure": false,
           "alpn": [
             "http/1.1"
@@ -1100,7 +1106,7 @@
       "settings": {
         "servers": [
           {
-            "address": "104.16.72.50",
+            "address": "199.232.78.140",
             "port": 443,
             "password": "MiTiVPN",
             "level": 8
@@ -1113,11 +1119,11 @@
         "wsSettings": {
           "path": "/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=fl",
           "headers": {
-            "Host": "fl-ll-i.App-Cloud.ir"
+            "Host": "mitivpn-mitivpn-mitivpn.global.ssl.fastly.net"
           }
         },
         "tlsSettings": {
-          "serverName": "Fl-u-ueisi.App-Cloud.ir",
+          "serverName": "ssl.fastly.com",
           "allowInsecure": false,
           "alpn": [
             "http/1.1"
@@ -1127,401 +1133,24 @@
     },
     {
       "tag": "proxy-37",
-      "protocol": "trojan",
+      "protocol": "shadowsocks",
       "settings": {
         "servers": [
           {
-            "address": "104.16.72.50",
-            "port": 443,
-            "password": "MiTiVPN",
+            "address": "r3mrcg00129437x.cybervena.com",
+            "port": 50099,
+            "method": "chacha20-ietf-poly1305",
+            "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4",
             "level": 8
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "wsSettings": {
-          "path": "/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=fl",
-          "headers": {
-            "Host": "fl-ll-i.App-Cloud.ir"
-          }
-        },
-        "tlsSettings": {
-          "serverName": "Fl-u-ueisi.App-Cloud.ir",
-          "allowInsecure": false,
-          "alpn": [
-            "http/1.1"
-          ]
-        }
+        "network": "tcp"
       }
     },
     {
       "tag": "proxy-38",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "104.16.72.50",
-            "port": 443,
-            "password": "MiTiVPN",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "wsSettings": {
-          "path": "/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=fl",
-          "headers": {
-            "Host": "fl-ll-i.App-Cloud.ir"
-          }
-        },
-        "tlsSettings": {
-          "serverName": "Fl-u-ueisi.App-Cloud.ir",
-          "allowInsecure": false,
-          "alpn": [
-            "http/1.1"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "proxy-39",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "104.16.72.50",
-            "port": 443,
-            "password": "MiTiVPN",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "wsSettings": {
-          "path": "/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=fl",
-          "headers": {
-            "Host": "fl-ll-i.App-Cloud.ir"
-          }
-        },
-        "tlsSettings": {
-          "serverName": "Fl-u-ueisi.App-Cloud.ir",
-          "allowInsecure": false,
-          "alpn": [
-            "http/1.1"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "proxy-40",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "104.26.4.60",
-            "port": 443,
-            "password": "MiTiVPN",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "wsSettings": {
-          "path": "/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=Nl",
-          "headers": {
-            "Host": "N-l.MaQror.ir"
-          }
-        },
-        "tlsSettings": {
-          "serverName": "NL-L-ll.MaQror.ir",
-          "allowInsecure": false,
-          "alpn": [
-            "http/1.1"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "proxy-41",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "104.26.4.60",
-            "port": 443,
-            "password": "MiTiVPN",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "wsSettings": {
-          "path": "/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=Nl",
-          "headers": {
-            "Host": "N-l.MaQror.ir"
-          }
-        },
-        "tlsSettings": {
-          "serverName": "NL-L-ll.MaQror.ir",
-          "allowInsecure": false,
-          "alpn": [
-            "http/1.1"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "proxy-42",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "104.26.4.60",
-            "port": 443,
-            "password": "MiTiVPN",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "wsSettings": {
-          "path": "/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=Nl",
-          "headers": {
-            "Host": "N-l.MaQror.ir"
-          }
-        },
-        "tlsSettings": {
-          "serverName": "NL-L-ll.MaQror.ir",
-          "allowInsecure": false,
-          "alpn": [
-            "http/1.1"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "proxy-43",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "141.193.213.21",
-            "port": 443,
-            "password": "MiTiVPN",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "wsSettings": {
-          "path": "/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=fl",
-          "headers": {
-            "Host": "f-l-nl.MaQror.ir"
-          }
-        },
-        "tlsSettings": {
-          "serverName": "fffffl-lls.MaQror.ir",
-          "allowInsecure": false,
-          "alpn": [
-            "http/1.1"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "proxy-44",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "162.159.38.119",
-            "port": 443,
-            "password": "MiTiVPN",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "wsSettings": {
-          "path": "/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=Sw",
-          "headers": {
-            "Host": "S--w-w.App-Cloud.ir"
-          }
-        },
-        "tlsSettings": {
-          "serverName": "sws-so-o.App-Cloud.ir",
-          "allowInsecure": false,
-          "alpn": [
-            "http/1.1"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "proxy-45",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "162.159.38.119",
-            "port": 443,
-            "password": "MiTiVPN",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "wsSettings": {
-          "path": "/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=Sw",
-          "headers": {
-            "Host": "S--w-w.App-Cloud.ir"
-          }
-        },
-        "tlsSettings": {
-          "serverName": "sws-so-o.App-Cloud.ir",
-          "allowInsecure": false,
-          "alpn": [
-            "http/1.1"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "proxy-46",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "162.159.38.119",
-            "port": 443,
-            "password": "MiTiVPN",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "wsSettings": {
-          "path": "/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=Sw",
-          "headers": {
-            "Host": "S--w-w.App-Cloud.ir"
-          }
-        },
-        "tlsSettings": {
-          "serverName": "sws-so-o.App-Cloud.ir",
-          "allowInsecure": false,
-          "alpn": [
-            "http/1.1"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "proxy-47",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "45.130.125.2",
-            "port": 443,
-            "password": "MiTiVPN",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "wsSettings": {
-          "path": "/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=nl",
-          "headers": {
-            "Host": "n--l-l.MaQror.ir"
-          }
-        },
-        "tlsSettings": {
-          "serverName": "nlll-lls-e.MaQror.ir",
-          "allowInsecure": false,
-          "alpn": [
-            "http/1.1"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "proxy-48",
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "167.150.100.115",
-            "port": 27755,
-            "method": "2022-blake3-aes-256-gcm",
-            "password": "fnvo82p9y4AKykZXyIFtnodFy6fQmWnVlI2SvGleOB0=",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "proxy-49",
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "r3mrcg001286ek2.cybervena.com",
-            "port": 50099,
-            "method": "chacha20-ietf-poly1305",
-            "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "proxy-50",
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "r3mrcg001286ek2.cybervena.com",
-            "port": 50099,
-            "method": "chacha20-ietf-poly1305",
-            "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "proxy-51",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -1539,25 +1168,7 @@
       }
     },
     {
-      "tag": "proxy-52",
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "mail2.thirdpaull.monster",
-            "port": 57327,
-            "method": "chacha20-ietf-poly1305",
-            "password": "2KAu9eMmGwShWTWcuyynmLE81PVkoKDvQ3fb29dPScc1bMUW5y6hpprXqVWqSqjTi234hFGdDf3ArCuWtBw5FA6zV5wBgWTP",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "proxy-53",
+      "tag": "proxy-39",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -1575,15 +1186,15 @@
       }
     },
     {
-      "tag": "proxy-54",
+      "tag": "proxy-40",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
           {
-            "address": "108.181.126.122",
-            "port": 8388,
+            "address": "193.233.161.92",
+            "port": 8390,
             "method": "chacha20-ietf-poly1305",
-            "password": "CJmTCCx7Ltud",
+            "password": "EyGy11BMfeP-6UHjsgajWw",
             "level": 8
           }
         ]
@@ -1593,43 +1204,7 @@
       }
     },
     {
-      "tag": "proxy-55",
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "108.181.58.239",
-            "port": 8388,
-            "method": "chacha20-ietf-poly1305",
-            "password": "CJmTCCx7Ltud",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "proxy-56",
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "108.181.58.239",
-            "port": 8388,
-            "method": "chacha20-ietf-poly1305",
-            "password": "CJmTCCx7Ltud",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "proxy-57",
+      "tag": "proxy-41",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -1647,7 +1222,7 @@
       }
     },
     {
-      "tag": "proxy-58",
+      "tag": "proxy-42",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -1665,7 +1240,7 @@
       }
     },
     {
-      "tag": "proxy-59",
+      "tag": "proxy-43",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -1683,7 +1258,25 @@
       }
     },
     {
-      "tag": "proxy-60",
+      "tag": "proxy-44",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "108.181.57.93",
+            "port": 8388,
+            "method": "chacha20-ietf-poly1305",
+            "password": "RSo52SbxW40r",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "proxy-45",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -1701,7 +1294,7 @@
       }
     },
     {
-      "tag": "proxy-61",
+      "tag": "proxy-46",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -1719,7 +1312,7 @@
       }
     },
     {
-      "tag": "proxy-62",
+      "tag": "proxy-47",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -1737,7 +1330,7 @@
       }
     },
     {
-      "tag": "proxy-63",
+      "tag": "proxy-48",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -1755,7 +1348,7 @@
       }
     },
     {
-      "tag": "proxy-64",
+      "tag": "proxy-49",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -1773,25 +1366,7 @@
       }
     },
     {
-      "tag": "proxy-65",
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "216.105.168.18",
-            "port": 443,
-            "method": "chacha20-ietf-poly1305",
-            "password": "hCCWOcIsK5wrFz4OX70rWf",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "proxy-66",
+      "tag": "proxy-50",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -1809,7 +1384,7 @@
       }
     },
     {
-      "tag": "proxy-67",
+      "tag": "proxy-51",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -1827,7 +1402,7 @@
       }
     },
     {
-      "tag": "proxy-68",
+      "tag": "proxy-52",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -1845,7 +1420,7 @@
       }
     },
     {
-      "tag": "proxy-69",
+      "tag": "proxy-53",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -1863,7 +1438,7 @@
       }
     },
     {
-      "tag": "proxy-70",
+      "tag": "proxy-54",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -1881,7 +1456,7 @@
       }
     },
     {
-      "tag": "proxy-71",
+      "tag": "proxy-55",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -1899,12 +1474,12 @@
       }
     },
     {
-      "tag": "proxy-72",
+      "tag": "proxy-56",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
           {
-            "address": "82.38.31.35",
+            "address": "82.38.31.32",
             "port": 443,
             "method": "chacha20-ietf-poly1305",
             "password": "oZIoA69Q8yhcQV8ka3Pa3A",
@@ -1917,7 +1492,7 @@
       }
     },
     {
-      "tag": "proxy-73",
+      "tag": "proxy-57",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -1935,7 +1510,7 @@
       }
     },
     {
-      "tag": "proxy-74",
+      "tag": "proxy-58",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -1953,7 +1528,7 @@
       }
     },
     {
-      "tag": "proxy-75",
+      "tag": "proxy-59",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -1971,7 +1546,7 @@
       }
     },
     {
-      "tag": "proxy-76",
+      "tag": "proxy-60",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -1989,43 +1564,7 @@
       }
     },
     {
-      "tag": "proxy-77",
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "38.54.80.160",
-            "port": 16292,
-            "method": "chacha20-ietf-poly1305",
-            "password": "r_NRe-+WRq2zVqMpCnJtTESlT8WyffHyFy",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "proxy-78",
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "38.54.80.160",
-            "port": 16292,
-            "method": "chacha20-ietf-poly1305",
-            "password": "r_NRe-+WRq2zVqMpCnJtTESlT8WyffHyFy",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "proxy-79",
+      "tag": "proxy-61",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -2043,7 +1582,7 @@
       }
     },
     {
-      "tag": "proxy-80",
+      "tag": "proxy-62",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -2061,7 +1600,7 @@
       }
     },
     {
-      "tag": "proxy-81",
+      "tag": "proxy-63",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -2079,7 +1618,7 @@
       }
     },
     {
-      "tag": "proxy-82",
+      "tag": "proxy-64",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -2097,7 +1636,7 @@
       }
     },
     {
-      "tag": "proxy-83",
+      "tag": "proxy-65",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -2115,7 +1654,7 @@
       }
     },
     {
-      "tag": "proxy-84",
+      "tag": "proxy-66",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -2133,7 +1672,7 @@
       }
     },
     {
-      "tag": "proxy-85",
+      "tag": "proxy-67",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -2151,7 +1690,7 @@
       }
     },
     {
-      "tag": "proxy-86",
+      "tag": "proxy-68",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -2169,7 +1708,25 @@
       }
     },
     {
-      "tag": "proxy-87",
+      "tag": "proxy-69",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "158.173.20.171",
+            "port": 443,
+            "method": "aes-128-gcm",
+            "password": "shadowsocks",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "proxy-70",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -2187,7 +1744,7 @@
       }
     },
     {
-      "tag": "proxy-88",
+      "tag": "proxy-71",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -2205,7 +1762,7 @@
       }
     },
     {
-      "tag": "proxy-89",
+      "tag": "proxy-72",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -2223,7 +1780,7 @@
       }
     },
     {
-      "tag": "proxy-90",
+      "tag": "proxy-73",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -2241,7 +1798,7 @@
       }
     },
     {
-      "tag": "proxy-91",
+      "tag": "proxy-74",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -2259,25 +1816,7 @@
       }
     },
     {
-      "tag": "proxy-92",
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "185.213.20.110",
-            "port": 7001,
-            "method": "aes-256-gcm",
-            "password": "RexnBgU7EV5ADxG",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "proxy-93",
+      "tag": "proxy-75",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -2295,7 +1834,7 @@
       }
     },
     {
-      "tag": "proxy-94",
+      "tag": "proxy-76",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -2313,7 +1852,7 @@
       }
     },
     {
-      "tag": "proxy-95",
+      "tag": "proxy-77",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -2331,7 +1870,7 @@
       }
     },
     {
-      "tag": "proxy-96",
+      "tag": "proxy-78",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -2349,7 +1888,7 @@
       }
     },
     {
-      "tag": "proxy-97",
+      "tag": "proxy-79",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -2367,61 +1906,7 @@
       }
     },
     {
-      "tag": "proxy-98",
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "103.106.231.82",
-            "port": 5600,
-            "method": "aes-256-gcm",
-            "password": "Y6R9pAtvxxzmGC",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "proxy-99",
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "92.118.205.211",
-            "port": 5600,
-            "method": "aes-256-gcm",
-            "password": "Y6R9pAtvxxzmGC",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "proxy-100",
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "172.245.235.84",
-            "port": 2375,
-            "method": "aes-256-gcm",
-            "password": "faBAoD54k87UJG7",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "proxy-101",
+      "tag": "proxy-80",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -2439,16 +1924,202 @@
       }
     },
     {
-      "tag": "proxy-102",
+      "tag": "proxy-81",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "154.223.16.41",
+            "port": 4444,
+            "method": "aes-256-gcm",
+            "password": "pKEW8JPByTVTLtM",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "proxy-82",
       "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "168.138.43.75",
+            "address": "69.84.182.49",
             "port": 80,
             "users": [
               {
-                "id": "11c3627f-31e8-4695-dfbd-34076e2f1f5d",
+                "id": "f8975871-a7a0-4906-8835-a23c1258ca1e",
+                "alterId": 0,
+                "security": "auto",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {
+            "Host": "google.whatsapp.snapp.torob.basalam.zula.uplaod-music.ir."
+          }
+        }
+      }
+    },
+    {
+      "tag": "proxy-83",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "69.84.182.49",
+            "port": 80,
+            "users": [
+              {
+                "id": "f8975871-a7a0-4906-8835-a23c1258ca1e",
+                "alterId": 0,
+                "security": "auto",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {
+            "Host": "google.whatsapp.snapp.torob.basalam.zula.uplaod-music.ir."
+          }
+        }
+      }
+    },
+    {
+      "tag": "proxy-84",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "82.198.246.233",
+            "port": 180,
+            "users": [
+              {
+                "id": "d13fc2f5-3e05-4795-81eb-44143a09e552",
+                "alterId": 0,
+                "security": "auto",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      }
+    },
+    {
+      "tag": "proxy-85",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "82.198.246.37",
+            "port": 180,
+            "users": [
+              {
+                "id": "d13fc2f5-3e05-4795-81eb-44143a09e552",
+                "alterId": 0,
+                "security": "auto",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      }
+    },
+    {
+      "tag": "proxy-86",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "3h-kazakhstan1.09vpn.com",
+            "port": 80,
+            "users": [
+              {
+                "id": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
+                "alterId": 0,
+                "security": "auto",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/vmess/",
+          "headers": {
+            "Host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
+          }
+        }
+      }
+    },
+    {
+      "tag": "proxy-87",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.17.124.179",
+            "port": 80,
+            "users": [
+              {
+                "id": "f8975871-a7a0-4906-8835-a23c1258ca1e",
+                "alterId": 0,
+                "security": "auto",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {
+            "Host": "google.whatsapp.snapp.torob.basalam.zula.uplaod-music.ir."
+          }
+        }
+      }
+    },
+    {
+      "tag": "proxy-88",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "129.146.77.248",
+            "port": 39495,
+            "users": [
+              {
+                "id": "f836c736-87fc-4fde-aabc-00857ecdff3e",
                 "alterId": 0,
                 "security": "auto",
                 "level": 8
@@ -2463,7 +2134,373 @@
         "wsSettings": {
           "path": "/cctv13.m3u8",
           "headers": {
-            "Host": "168.138.43.75"
+            "Host": "129.146.77.248"
+          }
+        }
+      }
+    },
+    {
+      "tag": "proxy-89",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "134.195.196.211",
+            "port": 18000,
+            "users": [
+              {
+                "id": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
+                "alterId": 0,
+                "security": "auto",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      }
+    },
+    {
+      "tag": "proxy-90",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "132.145.80.230",
+            "port": 80,
+            "users": [
+              {
+                "id": "5155860e-d07d-46c3-9128-3afbd84626c7",
+                "alterId": 0,
+                "security": "auto",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/cctv13.m3u8",
+          "headers": {
+            "Host": "kr02.a0a.xyz"
+          }
+        }
+      }
+    },
+    {
+      "tag": "proxy-91",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "140.83.51.161",
+            "port": 25686,
+            "users": [
+              {
+                "id": "6733c357-ba11-4e9f-f00f-7d87f2776ff9",
+                "alterId": 0,
+                "security": "auto",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/cctv13.m3u8",
+          "headers": {
+            "Host": "jp02.a0a.xyz"
+          }
+        }
+      }
+    },
+    {
+      "tag": "proxy-92",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "155.103.71.163",
+            "port": 2026,
+            "users": [
+              {
+                "id": "b2fcc775-1579-4b4b-9fe8-f8dde771c861",
+                "alterId": 0,
+                "security": "auto",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      }
+    },
+    {
+      "tag": "proxy-93",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "157.85.230.247",
+            "port": 2052,
+            "users": [
+              {
+                "id": "85357d35-492e-4814-835a-aba4cb7f00ad",
+                "alterId": 0,
+                "security": "auto",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "85357d35-492e-4814-835a-aba4cb7f00ad-vm",
+          "headers": {
+            "Host": "www.bing.com"
+          }
+        }
+      }
+    },
+    {
+      "tag": "proxy-94",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "193.93.169.116",
+            "port": 5050,
+            "users": [
+              {
+                "id": "c8c093de-dddf-42c6-9fcb-f7313bebce2e",
+                "alterId": 0,
+                "security": "auto",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      }
+    },
+    {
+      "tag": "proxy-95",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "38.114.123.42",
+            "port": 18000,
+            "users": [
+              {
+                "id": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
+                "alterId": 0,
+                "security": null,
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      }
+    },
+    {
+      "tag": "proxy-96",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "38.91.107.49",
+            "port": 18000,
+            "users": [
+              {
+                "id": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
+                "alterId": 0,
+                "security": "auto",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      }
+    },
+    {
+      "tag": "proxy-97",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "47.250.45.234",
+            "port": 43063,
+            "users": [
+              {
+                "id": "c77f48f5-4be3-4461-b52b-49998e7b897b",
+                "alterId": 0,
+                "security": "auto",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/arki",
+          "headers": {
+            "Host": "47.250.45.234"
+          }
+        }
+      }
+    },
+    {
+      "tag": "proxy-98",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "57.151.100.27",
+            "port": 10086,
+            "users": [
+              {
+                "id": "550e8400-e29b-41d4-a716-446655440000",
+                "alterId": 0,
+                "security": "auto",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      }
+    },
+    {
+      "tag": "proxy-99",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "66.163.117.58",
+            "port": 22324,
+            "users": [
+              {
+                "id": "04621bae-ab36-11ec-b909-0242ac120002",
+                "alterId": 0,
+                "security": "auto",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      }
+    },
+    {
+      "tag": "proxy-100",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "67.220.72.237",
+            "port": 22324,
+            "users": [
+              {
+                "id": "04621bae-ab36-11ec-b909-0242ac120002",
+                "alterId": 0,
+                "security": "auto",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      }
+    },
+    {
+      "tag": "proxy-101",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "67.220.85.46",
+            "port": 18000,
+            "users": [
+              {
+                "id": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
+                "alterId": 0,
+                "security": "aes-128-gcm",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      }
+    },
+    {
+      "tag": "proxy-102",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "69.84.182.49",
+            "port": 80,
+            "users": [
+              {
+                "id": "f8975871-a7a0-4906-8835-a23c1258ca1e",
+                "alterId": 0,
+                "security": "auto",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {
+            "Host": "google.whatsapp.snapp.torob.basalam.zula.uplaod-music.ir."
           }
         }
       }
@@ -2534,11 +2571,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "82.198.246.37",
-            "port": 180,
+            "address": "69.84.182.49",
+            "port": 80,
             "users": [
               {
-                "id": "d13fc2f5-3e05-4795-81eb-44143a09e552",
+                "id": "f8975871-a7a0-4906-8835-a23c1258ca1e",
                 "alterId": 0,
                 "security": "auto",
                 "level": 8
@@ -2548,300 +2585,18 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "security": "none"
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {
+            "Host": "google.whatsapp.snapp.torob.basalam.zula.uplaod-music.ir."
+          }
+        }
       }
     },
     {
       "tag": "proxy-106",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "104.17.124.179",
-            "port": 80,
-            "users": [
-              {
-                "id": "f8975871-a7a0-4906-8835-a23c1258ca1e",
-                "alterId": 0,
-                "security": "auto",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/",
-          "headers": {
-            "Host": "google.whatsapp.snapp.torob.basalam.zula.uplaod-music.ir."
-          }
-        }
-      }
-    },
-    {
-      "tag": "proxy-107",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "yg1.ygkkk.dpdns.org",
-            "port": 80,
-            "users": [
-              {
-                "id": "f8975871-a7a0-4906-8835-a23c1258ca1e",
-                "alterId": 0,
-                "security": "auto",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/",
-          "headers": {
-            "Host": "google.whatsapp.snapp.torob.basalam.zula.uplaod-music.ir."
-          }
-        }
-      }
-    },
-    {
-      "tag": "proxy-108",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "3h-kazakhstan1.09vpn.com",
-            "port": 80,
-            "users": [
-              {
-                "id": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
-                "alterId": 0,
-                "security": "auto",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/vmess/",
-          "headers": {
-            "Host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
-          }
-        }
-      }
-    },
-    {
-      "tag": "proxy-109",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "129.146.143.80",
-            "port": 48111,
-            "users": [
-              {
-                "id": "d4603cc2-e0ee-4651-83f5-1db5b7168177",
-                "alterId": 0,
-                "security": "auto",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      }
-    },
-    {
-      "tag": "proxy-110",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "134.195.196.211",
-            "port": 18000,
-            "users": [
-              {
-                "id": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
-                "alterId": 0,
-                "security": "auto",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      }
-    },
-    {
-      "tag": "proxy-111",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "140.83.51.161",
-            "port": 25686,
-            "users": [
-              {
-                "id": "6733c357-ba11-4e9f-f00f-7d87f2776ff9",
-                "alterId": 0,
-                "security": "auto",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/cctv13.m3u8",
-          "headers": {
-            "Host": "jp02.a0a.xyz"
-          }
-        }
-      }
-    },
-    {
-      "tag": "proxy-112",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "157.85.230.247",
-            "port": 2052,
-            "users": [
-              {
-                "id": "85357d35-492e-4814-835a-aba4cb7f00ad",
-                "alterId": 0,
-                "security": "auto",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "85357d35-492e-4814-835a-aba4cb7f00ad-vm",
-          "headers": {
-            "Host": "www.bing.com"
-          }
-        }
-      }
-    },
-    {
-      "tag": "proxy-113",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "69.84.182.49",
-            "port": 80,
-            "users": [
-              {
-                "id": "f8975871-a7a0-4906-8835-a23c1258ca1e",
-                "alterId": 0,
-                "security": "auto",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/",
-          "headers": {
-            "Host": "google.whatsapp.snapp.torob.basalam.zula.uplaod-music.ir."
-          }
-        }
-      }
-    },
-    {
-      "tag": "proxy-114",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "69.84.182.49",
-            "port": 80,
-            "users": [
-              {
-                "id": "f8975871-a7a0-4906-8835-a23c1258ca1e",
-                "alterId": 0,
-                "security": "auto",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/",
-          "headers": {
-            "Host": "google.whatsapp.snapp.torob.basalam.zula.uplaod-music.ir."
-          }
-        }
-      }
-    },
-    {
-      "tag": "proxy-115",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "69.84.182.49",
-            "port": 80,
-            "users": [
-              {
-                "id": "f8975871-a7a0-4906-8835-a23c1258ca1e",
-                "alterId": 0,
-                "security": "auto",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/",
-          "headers": {
-            "Host": "google.whatsapp.snapp.torob.basalam.zula.uplaod-music.ir."
-          }
-        }
-      }
-    },
-    {
-      "tag": "proxy-116",
       "protocol": "vmess",
       "settings": {
         "vnext": [
@@ -2865,7 +2620,55 @@
       }
     },
     {
-      "tag": "proxy-117",
+      "tag": "proxy-107",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "82.198.246.97",
+            "port": 180,
+            "users": [
+              {
+                "id": "d13fc2f5-3e05-4795-81eb-44143a09e552",
+                "alterId": 0,
+                "security": "auto",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      }
+    },
+    {
+      "tag": "proxy-108",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "82.198.246.37",
+            "port": 180,
+            "users": [
+              {
+                "id": "d13fc2f5-3e05-4795-81eb-44143a09e552",
+                "alterId": 0,
+                "security": "auto",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      }
+    },
+    {
+      "tag": "proxy-109",
       "protocol": "vmess",
       "settings": {
         "vnext": [
@@ -2889,37 +2692,7 @@
       }
     },
     {
-      "tag": "proxy-118",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "cf.tencentapp.cn",
-            "port": 80,
-            "users": [
-              {
-                "id": "f8975871-a7a0-4906-8835-a23c1258ca1e",
-                "alterId": 0,
-                "security": "auto",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/",
-          "headers": {
-            "Host": "google.whatsapp.snapp.torob.basalam.zula.uplaod-music.ir."
-          }
-        }
-      }
-    },
-    {
-      "tag": "proxy-119",
+      "tag": "proxy-110",
       "protocol": "vmess",
       "settings": {
         "vnext": [
@@ -2949,7 +2722,7 @@
       }
     },
     {
-      "tag": "proxy-120",
+      "tag": "proxy-111",
       "protocol": "vmess",
       "settings": {
         "vnext": [
@@ -2979,7 +2752,7 @@
       }
     },
     {
-      "tag": "proxy-121",
+      "tag": "proxy-112",
       "protocol": "vmess",
       "settings": {
         "vnext": [
@@ -3009,7 +2782,7 @@
       }
     },
     {
-      "tag": "proxy-122",
+      "tag": "proxy-113",
       "protocol": "vmess",
       "settings": {
         "vnext": [
@@ -3039,7 +2812,7 @@
       }
     },
     {
-      "tag": "proxy-123",
+      "tag": "proxy-114",
       "protocol": "vmess",
       "settings": {
         "vnext": [
